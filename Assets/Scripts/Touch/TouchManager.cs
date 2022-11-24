@@ -8,7 +8,7 @@ using TMPro;
 public enum TouchHorizontalPosition { CENTER = 0, LEFT = -1, RIGHT = 1 }
 public enum TouchVerticalPosition { CENTER = 0, UP = 1, DOWN = -1 }
 public enum TouchMovement { STATIONARY, LEFT, RIGHT, UP, DOWN }
-public enum TouchStatus { INACTIVE, ACTIVE, QUIT }
+public enum TouchStatus { INACTIVE, ACTIVE, QUIT, TAP }
 
 
 public class TouchManager : MonoBehaviour
@@ -16,6 +16,7 @@ public class TouchManager : MonoBehaviour
     [Header("UI objects")]
     [SerializeField] private Canvas rootCanvas;
     [Space]
+    [SerializeField] private RectTransform joystick;
     [SerializeField] private RectTransform touchReferenceCenter;
     [SerializeField] private RectTransform touchReferenceRange;
 
@@ -24,8 +25,11 @@ public class TouchManager : MonoBehaviour
 
     private Vector2 refPosition;
     private Vector2 touchPos;
+    private Vector2 joystickPos;
+    private Vector2 touchDirection;
 
-    readonly float jumpMaxInputDuration = 0.2f;
+    public readonly float jumpMaxInputDuration = 0.1f;
+    public readonly float swipeMaxInputDuration = 0.5f;
 
     public float CenterSize
     {
@@ -102,10 +106,29 @@ public class TouchManager : MonoBehaviour
         {
             for (int i = 0; i < touches.Length; i++)
             {
-                if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= jumpMaxInputDuration 
-                    && touches[i].CurrentMovement == TouchMovement.STATIONARY) return true;
+                if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= jumpMaxInputDuration
+                    && touches[i].CurrentMovement == TouchMovement.STATIONARY)
+                {
+                    return true;
+                }
             }
             return false;
+        }
+    }
+
+    public TouchMovement Swipe
+    {
+        get
+        {
+            for (int i = 1; i < touches.Length; i++)
+            {
+                if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= swipeMaxInputDuration
+                    && touches[i].Duration > jumpMaxInputDuration)
+                {
+                    return touches[i].CurrentMovement;
+                }
+            }
+            return TouchMovement.STATIONARY;
         }
     }
 
@@ -128,6 +151,10 @@ public class TouchManager : MonoBehaviour
     {
         for (int i = 0; i < touches.Length; i++)
             touches[i].Update();
+        if (Swipe != TouchMovement.STATIONARY)
+            Debug.Log(Swipe);
+
+        MoveJoystick();
     }
 
 
@@ -147,5 +174,17 @@ public class TouchManager : MonoBehaviour
             : touchPos.y < refPosition.y - CenterSize ? TouchVerticalPosition.DOWN
             : TouchVerticalPosition.CENTER;
         preciseV = Mathf.Clamp((Mathf.Abs(touchPos.y - refPosition.y) - CenterSize) / Range, 0, 1) * (float)vPos;
+    }
+
+    private void MoveJoystick()
+    {
+        if (touches[0].Status != TouchStatus.ACTIVE) joystickPos = refPosition;
+        else
+        {
+            touchDirection = touches[0].CurrentPosition - refPosition;
+            joystickPos = refPosition + touchDirection.normalized * Mathf.Clamp(Mathf.Sqrt(touchDirection.sqrMagnitude),
+                -CenterSize - Range, CenterSize + Range);
+        }
+        joystick.position = joystickPos;
     }
 }

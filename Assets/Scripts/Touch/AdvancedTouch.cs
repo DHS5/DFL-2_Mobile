@@ -87,7 +87,11 @@ public class AdvancedTouch
         initialPosition = touch.position;
         startTime = Time.time;
 
-        Status = TouchStatus.ACTIVE;
+        if (initialPosition.x > Screen.width / 2)
+            Status = TouchStatus.TAP;
+        else
+            Status = TouchStatus.ACTIVE;
+        //Status = TouchStatus.ACTIVE;
         CurrentMovement = TouchMovement.STATIONARY;
     }
 
@@ -95,6 +99,7 @@ public class AdvancedTouch
     {
         if (Mathf.Max(Mathf.Abs(CurrentPosition.x - initialPosition.x), Mathf.Abs(CurrentPosition.y - initialPosition.y)) > movementThreshold)
         {
+            Status = TouchStatus.ACTIVE;
             if (Mathf.Abs(CurrentPosition.x - initialPosition.x) > Mathf.Abs(CurrentPosition.y - initialPosition.y))
             {
                 CurrentMovement = CurrentPosition.x - initialPosition.x > 0 ? TouchMovement.RIGHT : TouchMovement.LEFT;
@@ -107,6 +112,11 @@ public class AdvancedTouch
         else
         {
             CurrentMovement = TouchMovement.STATIONARY;
+
+            if (Time.time - startTime > touchManager.jumpMaxInputDuration)
+            {
+                Status = TouchStatus.ACTIVE;
+            }
         }
     }
 
