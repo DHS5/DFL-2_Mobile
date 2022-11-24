@@ -38,7 +38,7 @@ public class FeintPS : PlayerState
             if (IsRaining)
                 nextState = new SlipPS(player);
             // Jump
-            else if (touch.Jump && controller.CanJump(att.JumpCost))
+            else if (Jump && controller.CanJump(att.JumpCost))
             {
                 nextState = new JumpPS(player);
             }

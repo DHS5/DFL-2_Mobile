@@ -35,6 +35,12 @@ public abstract class PlayerState
     protected float rawSide;
     protected float startSide;
 
+    protected bool Jump { get { return touch.Jump; } }
+    protected bool RightSwipe { get { return touch.Swipe == TouchMovement.RIGHT; } }
+    protected bool LeftSwipe { get { return touch.Swipe == TouchMovement.LEFT; } }
+    protected bool DownSwipe { get { return touch.Swipe == TouchMovement.DOWN; } }
+    protected bool UpSwipe { get { return touch.Swipe == TouchMovement.UP; } }
+
     protected float startTime;
     protected float animTime;
 
@@ -78,7 +84,7 @@ public abstract class PlayerState
         rawAcc = touch.RawAcc;
         rawSide = touch.RawSide;
     }
-    public virtual void Exit() { stage = Event.EXIT; } // Debug.Log(name + " -> " + nextState.name); }
+    public virtual void Exit() { stage = Event.EXIT; }// Debug.Log(name + " -> " + nextState.name); }
 
 
 

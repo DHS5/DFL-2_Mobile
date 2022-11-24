@@ -31,7 +31,7 @@ public class RunPS : PlayerState
 
 
         // Jump
-        if (touch.Jump && controller.CanJump(att.JumpCost))
+        if (Jump && controller.CanJump(att.JumpCost))
         {
             nextState = new JumpPS(player);
             stage = Event.EXIT;

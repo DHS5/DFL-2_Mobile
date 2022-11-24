@@ -44,7 +44,7 @@ public class SiderunPS : PlayerState
         controller.SideSpeed = att.NormalSideSpeed * side;
 
         // Jump
-        if (touch.Jump && controller.CanJump(att.JumpCost))
+        if (Jump && controller.CanJump(att.JumpCost))
         {
             nextState = new JumpPS(player);
             stage = Event.EXIT;
@@ -87,7 +87,8 @@ public class SiderunPS : PlayerState
             }
             else stage = Event.EXIT;
         }
-        else if (att.CanFeint && canFeint && rawSide * startSide < 0 && acc == 0)
+        else if (att.CanFeint && canFeint && //acc == 0 && 
+            ((rawSide * startSide < 0) || (startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
         {
             nextState = new FeintPS(player, -startSide);
             SetFloat("Dir", -startSide);

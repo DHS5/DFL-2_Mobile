@@ -82,12 +82,14 @@ public class AdvancedTouch
 
     private void Begin(Touch touch)
     {
+        if (Number == 0 && touchManager.MovableJoystickMode) touchManager.ReferencePosition = touch.position;
+
         LastTouch = touch;
 
         initialPosition = touch.position;
         startTime = Time.time;
 
-        if (initialPosition.x > Screen.width / 2)
+        if (Number > 0 && initialPosition.x > Screen.width / 2)
             Status = TouchStatus.TAP;
         else
             Status = TouchStatus.ACTIVE;

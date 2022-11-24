@@ -33,13 +33,13 @@ public class SlowsiderunPS : PlayerState
 
 
         // Spin
-        if (att.CanSpin && rawSide * startSide < 0)
+        if (att.CanSpin && ((startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
         {
             nextState = new SpinPS(player, -startSide);
             stage = Event.EXIT;
         }
         // Jump
-        else if (touch.Jump && controller.CanJump(att.JumpCost))
+        else if (Jump && controller.CanJump(att.JumpCost))
         {
             nextState = new JumpPS(player);
             stage = Event.EXIT;

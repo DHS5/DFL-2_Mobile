@@ -13,6 +13,8 @@ public enum TouchStatus { INACTIVE, ACTIVE, QUIT, TAP }
 
 public class TouchManager : MonoBehaviour
 {
+    [SerializeField] private MainManager main;
+
     [Header("UI objects")]
     [SerializeField] private Canvas rootCanvas;
     [Space]
@@ -20,6 +22,8 @@ public class TouchManager : MonoBehaviour
     [SerializeField] private RectTransform touchReferenceCenter;
     [SerializeField] private RectTransform touchReferenceRange;
 
+    [Header("Default parameters")]
+    [SerializeField] private Vector2 defaultRefPosition;
 
     private AdvancedTouch[] touches = new AdvancedTouch[3];
 
@@ -53,6 +57,19 @@ public class TouchManager : MonoBehaviour
             Canvas.ForceUpdateCanvases();
         }
     }
+
+    public Vector2 ReferencePosition
+    {
+        set
+        {
+            refPosition = value;
+
+            touchReferenceCenter.position = value;
+            joystick.position = value;
+        }
+    }
+
+    public bool MovableJoystickMode { get; private set; }
 
     public float Side
     {
@@ -104,7 +121,7 @@ public class TouchManager : MonoBehaviour
     {
         get
         {
-            for (int i = 0; i < touches.Length; i++)
+            for (int i = 1; i < touches.Length; i++)
             {
                 if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= jumpMaxInputDuration
                     && touches[i].CurrentMovement == TouchMovement.STATIONARY)
@@ -122,8 +139,8 @@ public class TouchManager : MonoBehaviour
         {
             for (int i = 1; i < touches.Length; i++)
             {
-                if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= swipeMaxInputDuration
-                    && touches[i].Duration > jumpMaxInputDuration)
+                if (touches[i].Status != TouchStatus.INACTIVE && touches[i].Duration <= swipeMaxInputDuration
+                    && touches[i].CurrentMovement != TouchMovement.STATIONARY)
                 {
                     return touches[i].CurrentMovement;
                 }
@@ -134,7 +151,9 @@ public class TouchManager : MonoBehaviour
 
     private void Awake()
     {
-        CenterSize = 50;
+        touchReferenceCenter.position = defaultRefPosition; // replace with dataManager datas
+
+        CenterSize = 75;
         Range = 150;
 
         for (int i = 0; i < touches.Length; i++)
@@ -143,20 +162,23 @@ public class TouchManager : MonoBehaviour
 
     private void Start()
     {
-        refPosition = new Vector2(touchReferenceCenter.position.x,
-            touchReferenceCenter.position.y);
+        LoadDatas(main.DataManager.gameplayData);
     }
 
     private void Update()
     {
         for (int i = 0; i < touches.Length; i++)
             touches[i].Update();
-        if (Swipe != TouchMovement.STATIONARY)
-            Debug.Log(Swipe);
 
         MoveJoystick();
     }
 
+
+    private void LoadDatas(GameplayData data)
+    {
+        MovableJoystickMode = false; // replace too
+        ReferencePosition = touchReferenceCenter.position;
+    }
 
 
     public void GetTouchPosition(Touch touch, ref TouchHorizontalPosition hPos, ref float preciseH,
@@ -175,6 +197,7 @@ public class TouchManager : MonoBehaviour
             : TouchVerticalPosition.CENTER;
         preciseV = Mathf.Clamp((Mathf.Abs(touchPos.y - refPosition.y) - CenterSize) / Range, 0, 1) * (float)vPos;
     }
+
 
     private void MoveJoystick()
     {

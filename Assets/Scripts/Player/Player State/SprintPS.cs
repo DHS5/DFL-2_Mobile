@@ -38,7 +38,7 @@ public class SprintPS : PlayerState
         controller.SideSpeed = att.AccSideSpeed * side;
 
         // Jump
-        if (touch.Jump)
+        if (UpSwipe)
         {
             if (att.CanHighKnee && controller.CanJump(att.HighKneeCost))
             {
@@ -50,14 +50,14 @@ public class SprintPS : PlayerState
                 nextState = new HurdlePS(player);
                 stage = Event.EXIT;
             }
-            else if (controller.CanJump(att.JumpCost))
-            {
-                nextState = new JumpPS(player);
-                stage = Event.EXIT;
-            }
+        }
+        else if (Jump && controller.CanJump(att.JumpCost))
+        {
+            nextState = new JumpPS(player);
+            stage = Event.EXIT;
         }
         // Slide
-        else if (rawAcc < 0)
+        else if (DownSwipe)
         {
             if (att.CanSlide && !controller.AlreadySlide)
             {

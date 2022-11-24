@@ -30,19 +30,19 @@ public class SlowrunPS : PlayerState
 
 
         // Juke
-        if (att.CanJuke && Time.time - startTime > UD.jukeDelay && rawSide != 0)
+        if (att.CanJuke && Time.time - startTime > UD.jukeDelay && (LeftSwipe || RightSwipe))
         {
-            nextState = new JukePS(player, rawSide);
+            nextState = new JukePS(player, LeftSwipe ? -1 : 1);
             stage = Event.EXIT;
         }
         // Flip
-        else if (att.CanFlip && Time.time - startTime > UD.flipDelay && touch.Jump && controller.CanJump(att.FlipCost))
+        else if (att.CanFlip && Time.time - startTime > UD.flipDelay && UpSwipe && controller.CanJump(att.FlipCost))
         {
             nextState = new FlipPS(player);
             stage = Event.EXIT;
         }
         // Jump
-        else if (!att.CanFlip && touch.Jump && controller.CanJump(att.JumpCost))
+        else if (touch.Jump && controller.CanJump(att.JumpCost))
         {
             nextState = new JumpPS(player);
             stage = Event.EXIT;
@@ -60,7 +60,7 @@ public class SlowrunPS : PlayerState
             stage = Event.EXIT;
         }
         // Slowsiderun
-        else if (!att.CanJuke && side != 0)
+        else if (side != 0)
         {
             nextState = new SlowsiderunPS(player, side / Mathf.Abs(side), true);
             stage = Event.EXIT;
