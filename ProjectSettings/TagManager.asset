@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - MusicSource
+  - Ground
+  - Obstacle
+  - NextWave
+  - FieldLimit
+  - OutOfBounds
+  - StadiumLimit
+  - Buzzer
+  - Enemy
+  - FinalObjectif
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - NavMesh
+  - Enemy
+  - IgnoreEnemy
+  - Obstacle
+  - IgnoreGround
+  - Stadium
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
