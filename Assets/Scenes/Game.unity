@@ -4693,7 +4693,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 5
-    locked: 1
+    locked: 0
   proMission:
     gameModes: 0000000001000000
     gameDifficulties: 00000000
@@ -4701,7 +4701,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 6
-    locked: 1
+    locked: 0
   starMission:
     gameModes: 0000000001000000
     gameDifficulties: 01000000
@@ -4709,7 +4709,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 6
-    locked: 1
+    locked: 0
   veteranMission:
     gameModes: 0000000001000000
     gameDifficulties: 02000000
@@ -4717,7 +4717,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 6
-    locked: 1
+    locked: 0
   legendMission:
     gameModes: 0000000001000000
     gameDifficulties: 03000000
@@ -4725,7 +4725,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 6
-    locked: 1
+    locked: 0
   rainMission:
     gameModes: 000000000200000001000000
     gameDifficulties: 
@@ -4733,7 +4733,7 @@ MonoBehaviour:
     gameOptions: 02000000
     gameDrill: 0
     waveToReach: 4
-    locked: 1
+    locked: 0
   fogMission:
     gameModes: 000000000200000001000000
     gameDifficulties: 
@@ -4741,7 +4741,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 5
-    locked: 1
+    locked: 0
   bonusMission:
     gameModes: 00000000
     gameDifficulties: 
@@ -4749,7 +4749,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 3
-    locked: 1
+    locked: 0
   obstacleMission:
     gameModes: 02000000
     gameDifficulties: 
@@ -4757,7 +4757,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 0
     waveToReach: 5
-    locked: 1
+    locked: 0
   objectifMission:
     gameModes: 03000000
     gameDifficulties: 
@@ -4765,7 +4765,7 @@ MonoBehaviour:
     gameOptions: 
     gameDrill: 2
     waveToReach: 5
-    locked: 1
+    locked: 0
   weaponMission:
     gameModes: 02000000
     gameDifficulties: 
@@ -4773,7 +4773,7 @@ MonoBehaviour:
     gameOptions: 01000000
     gameDrill: 0
     waveToReach: 4
-    locked: 1
+    locked: 0
 --- !u!114 &675627221
 MonoBehaviour:
   m_ObjectHideFlags: 0
