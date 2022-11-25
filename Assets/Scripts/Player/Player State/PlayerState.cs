@@ -35,7 +35,7 @@ public abstract class PlayerState
     protected float rawSide;
     protected float startSide;
 
-    protected bool Jump { get { return touch.Jump; } }
+    protected bool Jump { get { return touch.Jump || touch.Swipe == TouchMovement.UP; } }
     protected bool RightSwipe { get { return touch.Swipe == TouchMovement.RIGHT; } }
     protected bool LeftSwipe { get { return touch.Swipe == TouchMovement.LEFT; } }
     protected bool DownSwipe { get { return touch.Swipe == TouchMovement.DOWN; } }

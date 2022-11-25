@@ -82,7 +82,7 @@ public class AdvancedTouch
 
     private void Begin(Touch touch)
     {
-        if (Number == 0 && touchManager.MovableJoystickMode) touchManager.ReferencePosition = touch.position;
+        if (Number == 0 && touchManager.JoystickMode == JoystickMode.MOVABLE) touchManager.ReferencePosition = touch.position;
 
         LastTouch = touch;
 

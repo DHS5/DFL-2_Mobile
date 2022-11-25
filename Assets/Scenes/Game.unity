@@ -4791,7 +4791,6 @@ MonoBehaviour:
   joystick: {fileID: 2068960724}
   touchReferenceCenter: {fileID: 1817090522}
   touchReferenceRange: {fileID: 786773399}
-  defaultRefPosition: {x: 400, y: 280}
 --- !u!1001 &679768734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10329,7 +10328,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33c6c3d09bddf97428c13e08c23e0e6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73c1d3d2f48e2104ab6aa680cf343488, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12290,7 +12289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 33c6c3d09bddf97428c13e08c23e0e6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40380b7c512cb784d8d83e65830ff65b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

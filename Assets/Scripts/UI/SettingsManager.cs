@@ -36,10 +36,13 @@ public class SettingsManager : MonoBehaviour
 
 
     [Header("UI elements")]
-    [SerializeField] private Slider sensitivitySlider;
-    [SerializeField] private Slider smoothRotationSlider;
-    [SerializeField] private Slider headAngleSlider;
-    [SerializeField] private Slider viewTypeSlider;
+    [SerializeField] private Slider joystickModeSlider;
+    [SerializeField] private Slider centerSizeSlider;
+    [SerializeField] private Slider boundarySizeSlider;
+    [SerializeField] private Slider joystickSizeSlider;
+    [SerializeField] private Slider joystickPosXSlider;
+    [SerializeField] private Slider joystickPosYSlider;
+
     [SerializeField] private Toggle goalpostToggle;
     [SerializeField] private Toggle backviewToggle;
     [Space]
@@ -106,8 +109,6 @@ public class SettingsManager : MonoBehaviour
         set 
         {
             DataManager.gameplayData.viewType = (ViewType) value;
-
-            SetViewTypeUI((int) value);
         }
     }
 
@@ -121,6 +122,52 @@ public class SettingsManager : MonoBehaviour
         { 
             DataManager.gameplayData.backview = value;
             if (Main != null) Main.GameUIManager.SetBackview(value);
+        }
+    }
+    // Joystick gameplay
+    public float JoystickMode
+    {
+        set
+        {
+            DataManager.gameplayData.joystickMode = (JoystickMode) value;
+        }
+    }
+    public float JoystickCenterSize
+    {
+        set
+        {
+            DataManager.gameplayData.centerSize = value;
+            if (Main != null) Main.TouchManager.CenterSize = value;
+        }
+    }
+    public float JoystickBoundarySize
+    {
+        set
+        {
+            DataManager.gameplayData.boundarySize = value;
+            if (Main != null) Main.TouchManager.Range = value;
+        }
+    }
+    public float JoystickSize
+    {
+        set
+        {
+            DataManager.gameplayData.joystickSize = value;
+            if (Main != null) Main.TouchManager.JoystickSize = value;
+        }
+    }
+    public float JoystickPosX
+    {
+        set
+        {
+            DataManager.gameplayData.joystickPosX = value;
+        }
+    }
+    public float JoystickPosY
+    {
+        set
+        {
+            DataManager.gameplayData.joystickPosY = value;
         }
     }
 
@@ -224,33 +271,17 @@ public class SettingsManager : MonoBehaviour
 
     private void LoadGameplayData(GameplayData data)
     {
-        //sensitivitySlider.value = data.yms;
-        //smoothRotationSlider.value = data.ysr;
-        //headAngleSlider.value = data.headAngle;
-        //viewTypeSlider.value = (float) data.viewType;
+        joystickModeSlider.value = (int)data.joystickMode;
+        centerSizeSlider.value = data.centerSize;
+        boundarySizeSlider.value = data.boundarySize;
+        joystickSizeSlider.value = data.joystickSize;
+        joystickPosXSlider.value = data.joystickPosX;
+        joystickPosYSlider.value = data.joystickPosY;
+
         goalpostToggle.isOn = data.goalpost;
         backviewToggle.isOn = data.backview;
-
-        //SetViewTypeUI((int) data.viewType);
     }
 
-    private void SetViewTypeUI(int value)
-    {
-        if (value == 0)
-        {
-            sensitivitySlider.interactable = true;
-            smoothRotationSlider.interactable = true;
-            headAngleSlider.interactable = true;
-            backviewToggle.interactable = false;
-        }
-        else if (value == 1)
-        {
-            sensitivitySlider.interactable = false;
-            smoothRotationSlider.interactable = false;
-            headAngleSlider.interactable = false;
-            backviewToggle.interactable = true;
-        }
-    }
 
     private void LoadAudioData(AudioData data)
     {

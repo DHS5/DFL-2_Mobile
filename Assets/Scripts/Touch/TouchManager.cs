@@ -22,8 +22,6 @@ public class TouchManager : MonoBehaviour
     [SerializeField] private RectTransform touchReferenceCenter;
     [SerializeField] private RectTransform touchReferenceRange;
 
-    [Header("Default parameters")]
-    [SerializeField] private Vector2 defaultRefPosition;
 
     private AdvancedTouch[] touches = new AdvancedTouch[3];
 
@@ -32,7 +30,7 @@ public class TouchManager : MonoBehaviour
     private Vector2 joystickPos;
     private Vector2 touchDirection;
 
-    public readonly float jumpMaxInputDuration = 0.1f;
+    public readonly float jumpMaxInputDuration = 0.2f;
     public readonly float swipeMaxInputDuration = 0.5f;
 
     public float CenterSize
@@ -57,6 +55,17 @@ public class TouchManager : MonoBehaviour
             Canvas.ForceUpdateCanvases();
         }
     }
+    public float JoystickSize
+    {
+        get { return joystick.rect.width / 2; }
+        set
+        {
+            joystick.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, value * 2);
+            joystick.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, value * 2);
+
+            Canvas.ForceUpdateCanvases();
+        }
+    }
 
     public Vector2 ReferencePosition
     {
@@ -69,7 +78,7 @@ public class TouchManager : MonoBehaviour
         }
     }
 
-    public bool MovableJoystickMode { get; private set; }
+    public JoystickMode JoystickMode { get; private set; }
 
     public float Side
     {
@@ -151,10 +160,7 @@ public class TouchManager : MonoBehaviour
 
     private void Awake()
     {
-        touchReferenceCenter.position = defaultRefPosition; // replace with dataManager datas
-
-        CenterSize = 75;
-        Range = 150;
+        touchReferenceCenter.position = new Vector2(main.DataManager.gameplayData.joystickPosX, main.DataManager.gameplayData.joystickPosY);
 
         for (int i = 0; i < touches.Length; i++)
             touches[i] = new AdvancedTouch(i, this);
@@ -176,8 +182,11 @@ public class TouchManager : MonoBehaviour
 
     private void LoadDatas(GameplayData data)
     {
-        MovableJoystickMode = false; // replace too
         ReferencePosition = touchReferenceCenter.position;
+        CenterSize = data.centerSize;
+        Range = data.boundarySize;
+        JoystickSize = data.joystickSize;
+        JoystickMode = data.joystickMode;
     }
 
 
