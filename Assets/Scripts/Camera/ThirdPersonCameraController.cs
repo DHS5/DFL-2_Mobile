@@ -38,13 +38,11 @@ public class ThirdPersonCameraController : MonoBehaviour
         lCamera.gameObject.SetActive(Input.GetKey(KeyCode.N));
     }
 
-    private void LateUpdate()
+
+    public void NextCamera()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            if (CameraPos == cameraPositions.Length - 1) CameraPos = 0;
-            else CameraPos++;
-            tpCamera.transform.localPosition = cameraPositions[CameraPos];
-        }
+        if (CameraPos == cameraPositions.Length - 1) CameraPos = 0;
+        else CameraPos++;
+        tpCamera.transform.localPosition = cameraPositions[CameraPos];
     }
 }

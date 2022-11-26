@@ -22,11 +22,11 @@ public class Flashlight : MonoBehaviour
 
     private FlashlightAttribute[] flashlightAttributes =
     {
-        new FlashlightAttribute { intensity = 75, range = 25, angle = 120 },
-        new FlashlightAttribute { intensity = 65, range = 20, angle = 110 },
-        new FlashlightAttribute { intensity = 55, range = 17.5f, angle = 95 },
-        new FlashlightAttribute { intensity = 50, range = 15, angle = 85 },
-        new FlashlightAttribute { intensity = 45, range = 12.5f, angle = 70 }
+        new FlashlightAttribute { intensity = 6, range = 25, angle = 120 },
+        new FlashlightAttribute { intensity = 5.5f, range = 20, angle = 110 },
+        new FlashlightAttribute { intensity = 5, range = 17.5f, angle = 95 },
+        new FlashlightAttribute { intensity = 4.5f, range = 15, angle = 85 },
+        new FlashlightAttribute { intensity = 4, range = 12.5f, angle = 70 }
     };
 
     private bool gotAttribute = false;

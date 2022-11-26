@@ -69,20 +69,11 @@ public class Weapon : MonoBehaviour
     }
 
 
-
     private void Start()
     {
         canShoot = true;
 
         weaponsManager.ActuGameUI(weaponSprite, ammunition, canShoot, ammunition > 0);
-    }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonUp(0) && canShoot && weaponsManager.GameOn && cursor.locked)
-        {
-            Shoot();
-        }
     }
 
 
@@ -108,8 +99,9 @@ public class Weapon : MonoBehaviour
     /// <summary>
     /// Uses the weapon to kill zombies targetable
     /// </summary>
-    protected virtual void Shoot()
+    public virtual void Shoot()
     {
+        if (!canShoot || !weaponsManager.GameOn) return;
         // Initialization of the zombie's list & useful variables
         List<Enemy> zombieList = new(enemiesManager.enemies);
         Zombie z;

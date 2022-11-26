@@ -32,7 +32,7 @@ public class JukePS : PlayerState
         base.Update();
 
 
-        if (att.CanJukeSpin && acc == 0 && ((startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
+        if (att.CanJukeSpin && ((startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
             nextState = new SpinPS(player, -startSide);
 
         if (Time.time >= startTime + animTime)

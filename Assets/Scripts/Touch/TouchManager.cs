@@ -21,6 +21,7 @@ public class TouchManager : MonoBehaviour
     [SerializeField] private RectTransform joystick;
     [SerializeField] private RectTransform touchReferenceCenter;
     [SerializeField] private RectTransform touchReferenceRange;
+    [SerializeField] private RectTransform jumpButton;
 
 
     private AdvancedTouch[] touches = new AdvancedTouch[3];
@@ -62,6 +63,18 @@ public class TouchManager : MonoBehaviour
         {
             joystick.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, value * 2);
             joystick.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, value * 2);
+
+            Canvas.ForceUpdateCanvases();
+        }
+    }
+
+    public float JumpButtonSize
+    {
+        get { return jumpButton.rect.width; }
+        set
+        {
+            jumpButton.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, value);
+            jumpButton.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, value);
 
             Canvas.ForceUpdateCanvases();
         }
@@ -126,19 +139,23 @@ public class TouchManager : MonoBehaviour
         }
     }
 
+    private float lastJumpTime = -0.1f;
+
     public bool Jump
     {
+        set { lastJumpTime = Time.time; }
         get
         {
-            for (int i = 1; i < touches.Length; i++)
-            {
-                if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= jumpMaxInputDuration
-                    && touches[i].CurrentMovement == TouchMovement.STATIONARY)
-                {
-                    return true;
-                }
-            }
-            return false;
+            return lastJumpTime == Time.time;
+            //for (int i = 1; i < touches.Length; i++)
+            //{
+            //    if (touches[i].Status == TouchStatus.QUIT && touches[i].Duration <= jumpMaxInputDuration
+            //        && touches[i].CurrentMovement == TouchMovement.STATIONARY)
+            //    {
+            //        return true;
+            //    }
+            //}
+            //return false;
         }
     }
 
@@ -187,6 +204,7 @@ public class TouchManager : MonoBehaviour
         Range = data.boundarySize;
         JoystickSize = data.joystickSize;
         JoystickMode = data.joystickMode;
+        JumpButtonSize = data.jumpButtonSize;
     }
 
 

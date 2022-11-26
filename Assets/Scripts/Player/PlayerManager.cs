@@ -211,4 +211,9 @@ public class PlayerManager : MonoBehaviour
 
         return total;
     }
+
+    public void NextCamera()
+    {
+        player.tPPlayer.tpsCamera.NextCamera();
+    }
 }

@@ -42,6 +42,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Slider joystickSizeSlider;
     [SerializeField] private Slider joystickPosXSlider;
     [SerializeField] private Slider joystickPosYSlider;
+    [SerializeField] private Slider jumpButtonSlider;
 
     [SerializeField] private Toggle goalpostToggle;
     [SerializeField] private Toggle backviewToggle;
@@ -170,6 +171,14 @@ public class SettingsManager : MonoBehaviour
             DataManager.gameplayData.joystickPosY = value;
         }
     }
+    
+    public float JumpButtonSize
+    {
+        set
+        {
+            DataManager.gameplayData.jumpButtonSize = value;
+        }
+    }
 
     public bool InfoButtonsOn
     {
@@ -277,6 +286,7 @@ public class SettingsManager : MonoBehaviour
         joystickSizeSlider.value = data.joystickSize;
         joystickPosXSlider.value = data.joystickPosX;
         joystickPosYSlider.value = data.joystickPosY;
+        jumpButtonSlider.value = data.jumpButtonSize;
 
         goalpostToggle.isOn = data.goalpost;
         backviewToggle.isOn = data.backview;
