@@ -244,7 +244,7 @@ public class TouchManager : MonoBehaviour
 
     public void JumpButtonBlack(bool black)
     {
-        if (black) jumpButtonImage.color = Color.black;
+        if (black) jumpButtonImage.color = Color.gray;
         else jumpButtonImage.color = Color.white;
     }
 }

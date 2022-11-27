@@ -8,14 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ParkourMetal_Mat
-  m_Shader: {fileID: 4800000, guid: 63a90426d42b698448966291201d6716, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
+  - _GLOSSYREFLECTIONS_OFF
+  m_InvalidKeywords:
   - _DETAILSOURCE_SPECULARALPHA
+  - _ENABLETRIPLANARPROJECTION_ON
   - _SOURCE_SPECULARALPHA
   - _TRIPLANARSPACEPROJECTION_OBJECTSPACE
-  m_InvalidKeywords:
-  - _ENABLETRIPLANARPROJECTION_ON
-  - _GLOSSYREFLECTIONS_OFF
   - _USEAOFROMMAINPROPERTIES_ON
   - _USEEMISSIONFROMMAINPROPERTIES_ON
   m_LightmapFlags: 4
@@ -122,7 +122,7 @@ Material:
     - _EnableTriplanarProjection: 1
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
-    - _Glossiness: 0.2
+    - _Glossiness: 0.7
     - _GlossyReflections: 0
     - _IntensityMask: 1
     - _InvertABaseColor: 0
@@ -156,7 +156,7 @@ Material:
     - __dirty: 1
     m_Colors:
     - _BaseColor: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
-    - _Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _DetailSpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

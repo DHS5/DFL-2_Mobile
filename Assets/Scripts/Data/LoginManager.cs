@@ -64,11 +64,6 @@ public class LoginManager : MonoBehaviour
             ActuStateText();
             ActuButtons();
             homeLoginButton.gameObject.SetActive(value == ConnectionState.NO_SESSION);
-
-            if (ConnectionManager.SessionConnected)
-            {
-                main.DataManager.StartCoroutine(main.DataManager.GetOnlineFileID());
-            }
             main.LeaderboardManager.LoadLeaderboards();
 
             Wait(false);
@@ -248,9 +243,7 @@ public class LoginManager : MonoBehaviour
                             {
                                 ConnectionManager.playerInfo.pseudo = "error";
                             }
-
                             State = ConnectionState.CONNECTED;
-
                             if (restore) main.DataManager.RestoreOnlineData();
                         });
                     }
