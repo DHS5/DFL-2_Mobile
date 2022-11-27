@@ -216,4 +216,10 @@ public class PlayerManager : MonoBehaviour
     {
         player.tPPlayer.tpsCamera.NextCamera();
     }
+
+
+    public void JumpButtonColor(bool black)
+    {
+        main.touchManager.JumpButtonBlack(black);
+    }
 }

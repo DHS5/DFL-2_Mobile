@@ -266,7 +266,10 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
+        {
             OnGround = true;
+            player.playerManager.JumpButtonColor(false);
+        }
     }
 
     public bool CanJump(float cost)
@@ -301,6 +304,8 @@ public class PlayerController : MonoBehaviour
         PlayerRigidbody.AddForce(JumpPower(height), ForceMode.Impulse);
         OnGround = false;
         jumpCharge -= cost;
+
+        player.playerManager.JumpButtonColor(true);
 
         return 0.5f + 0.09f * (height - 2);
     }

@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4717751774982604540
 Transform:
@@ -41,10 +41,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4717751774982604540}
     m_Modifications:
+    - target: {fileID: 1090664930244485361, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619299016378511392, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4639982754843332744, guid: 292367cea7f5e204ea7e07cd12ec1342,
         type: 3}
       propertyPath: m_Name
       value: ScaffoldingArc
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819578759333237125, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8474786064204359504, guid: 292367cea7f5e204ea7e07cd12ec1342,
         type: 3}
@@ -101,6 +116,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8493593002221814100, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 292367cea7f5e204ea7e07cd12ec1342, type: 3}
 --- !u!4 &5779271703427219618 stripped
@@ -116,10 +136,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4717751774982604540}
     m_Modifications:
+    - target: {fileID: 1090664930244485361, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2619299016378511392, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4639982754843332744, guid: 292367cea7f5e204ea7e07cd12ec1342,
         type: 3}
       propertyPath: m_Name
       value: ScaffoldingArc (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6819578759333237125, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8474786064204359504, guid: 292367cea7f5e204ea7e07cd12ec1342,
         type: 3}
@@ -175,6 +210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493593002221814100, guid: 292367cea7f5e204ea7e07cd12ec1342,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 292367cea7f5e204ea7e07cd12ec1342, type: 3}
@@ -251,7 +291,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7820357572025877410, guid: 01bbdbd334dbf2b4eadf187287b4cff1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820357572025877410, guid: 01bbdbd334dbf2b4eadf187287b4cff1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820357572025877410, guid: 01bbdbd334dbf2b4eadf187287b4cff1,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.25
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7065017379403421070, guid: 01bbdbd334dbf2b4eadf187287b4cff1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 01bbdbd334dbf2b4eadf187287b4cff1, type: 3}
 --- !u!4 &3828957349445366235 stripped
 Transform:

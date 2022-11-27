@@ -4794,6 +4794,7 @@ MonoBehaviour:
   touchReferenceCenter: {fileID: 1817090522}
   touchReferenceRange: {fileID: 786773399}
   jumpButton: {fileID: 1052652183}
+  jumpButtonImage: {fileID: 1052652184}
 --- !u!1001 &679768734
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ public class TouchManager : MonoBehaviour
     [SerializeField] private RectTransform touchReferenceCenter;
     [SerializeField] private RectTransform touchReferenceRange;
     [SerializeField] private RectTransform jumpButton;
+    [SerializeField] private Image jumpButtonImage;
 
 
     private AdvancedTouch[] touches = new AdvancedTouch[3];
@@ -239,5 +240,11 @@ public class TouchManager : MonoBehaviour
                 -CenterSize - Range, CenterSize + Range);
         }
         joystick.position = joystickPos;
+    }
+
+    public void JumpButtonBlack(bool black)
+    {
+        if (black) jumpButtonImage.color = Color.black;
+        else jumpButtonImage.color = Color.white;
     }
 }

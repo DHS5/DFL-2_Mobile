@@ -79,7 +79,7 @@ public abstract class PlayerState
     }
     public virtual void Update()
     {
-        acc = controller.Acceleration;
+        acc = touch.Acc;
         side = controller.Direction;
         rawAcc = touch.RawAcc;
         rawSide = touch.RawSide;

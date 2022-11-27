@@ -58,6 +58,12 @@ public class AdvancedTouch
         if (Input.touchCount > Number)
         {
             CurrentTouch = Input.GetTouch(Number);
+            if (Number == 0 && CurrentPosition.x > Screen.width / 2)
+            {
+                Status = TouchStatus.INACTIVE;
+                return;
+            }
+
             touchManager.GetTouchPosition(CurrentTouch, ref hPosition, ref preciseHPos, ref vPosition, ref preciseVPos);
 
             if (CurrentPhase == TouchPhase.Began)
@@ -83,7 +89,6 @@ public class AdvancedTouch
     private void Begin(Touch touch)
     {
         if (Number == 0 && touchManager.JoystickMode == JoystickMode.MOVABLE) touchManager.ReferencePosition = touch.position;
-
         LastTouch = touch;
 
         initialPosition = touch.position;
