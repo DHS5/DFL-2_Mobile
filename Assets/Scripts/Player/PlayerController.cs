@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     private float realDir;
     private float realAcc;
+    private float rawDir;
+    private float rawAcc;
 
 
     /// <summary>
@@ -197,23 +199,25 @@ public class PlayerController : MonoBehaviour
     private void FilterDir()
     {
         //float rawDir = Input.GetAxisRaw("Horizontal");
-        float rawDir = touchManager.Side;
+        rawDir = touchManager.Side;
 
-        if (rawDir != 0)
-            realDir += rawDir * DirSensitivity * Time.deltaTime;
-        else if (rawDir == 0)
-        {
-            if (realDir > 0)
-            {
-                realDir -= DirGravity * Time.deltaTime;
-                if (realDir < 0) realDir = 0f;
-            }
-            else if (realDir < 0)
-            {
-                realDir += DirGravity * Time.deltaTime;
-                if (realDir > 0) realDir = 0f;
-            }
-        }
+        //if (rawDir != 0)
+        //    realDir += rawDir * DirSensitivity * Time.deltaTime;
+        //else if (rawDir == 0)
+        //{
+        //    if (realDir > 0)
+        //    {
+        //        realDir -= DirGravity * Time.deltaTime;
+        //        if (realDir < 0) realDir = 0f;
+        //    }
+        //    else if (realDir < 0)
+        //    {
+        //        realDir += DirGravity * Time.deltaTime;
+        //        if (realDir > 0) realDir = 0f;
+        //    }
+        //}
+
+        realDir = Mathf.Lerp(realDir, rawDir, DirSensitivity * Time.deltaTime);
 
         if (Mathf.Abs(realDir) <= Snap) SnapDir();
 
@@ -222,7 +226,7 @@ public class PlayerController : MonoBehaviour
     private void FilterAcc()
     {
         //float rawAcc = Input.GetAxisRaw("Vertical");
-        float rawAcc = touchManager.Acc;
+        rawAcc = touchManager.Acc;
 
         if (rawAcc != 0)
             realAcc += rawAcc * AccSensitivity * Time.deltaTime;

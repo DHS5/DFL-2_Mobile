@@ -80,7 +80,7 @@ public abstract class PlayerState
     public virtual void Update()
     {
         acc = touch.Acc;
-        side = touch.Side;
+        side = controller.Direction;
         rawAcc = touch.RawAcc;
         rawSide = touch.RawSide;
     }
@@ -113,9 +113,6 @@ public abstract class PlayerState
             Quaternion.Slerp(player.tPPlayer.transform.localRotation,
                 Quaternion.LookRotation(direction, Vector3.up), Time.deltaTime * rotationSpeed);
 
-            player.fPPlayer.transform.localRotation =
-                Quaternion.Slerp(player.fPPlayer.transform.localRotation,
-                    Quaternion.LookRotation(direction, Vector3.up), Time.deltaTime * rotationSpeed);
         }
 
     }

@@ -42,6 +42,12 @@ public class RunPS : PlayerState
             nextState = new SprintPS(player);
             stage = Event.EXIT;
         }
+        // Slowsiderun
+        else if (acc < 0 && side != 0)
+        {
+            nextState = new SlowsiderunPS(player, side / Mathf.Abs(side), false);
+            stage = Event.EXIT;
+        }
         // Slow
         else if (acc < 0)
         {

@@ -30,6 +30,7 @@ public class SlowsiderunPS : PlayerState
 
 
         controller.SideSpeed = (att.NormalSideSpeed + ((att.SlowSideSpeed - att.NormalSideSpeed) * Mathf.Abs(acc))) * side;
+        controller.Speed = att.NormalSpeed * (att.SlowM + (1 - att.SlowM) * Mathf.Abs(side));
 
 
         // Spin

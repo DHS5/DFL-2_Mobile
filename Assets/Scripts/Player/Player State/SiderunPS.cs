@@ -29,6 +29,7 @@ public class SiderunPS : PlayerState
 
         controller.Speed = att.NormalSpeed;
         controller.SideSpeed = att.NormalSideSpeed * side;
+        PlayerOrientation();
 
         base.Enter();
     }
