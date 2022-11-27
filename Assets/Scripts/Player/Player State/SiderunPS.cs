@@ -51,7 +51,7 @@ public class SiderunPS : PlayerState
             stage = Event.EXIT;
         }
 
-        if (Time.time >= startTime + animTime)
+        if (!canFeint || Time.time >= startTime + animTime)
         {
             if (nextState == null)
             {
@@ -88,7 +88,7 @@ public class SiderunPS : PlayerState
             }
             else stage = Event.EXIT;
         }
-        else if (att.CanFeint && canFeint && //acc == 0 && 
+        if (Time.time >= startTime  + 0.1f && Time.time <= startTime + 0.7f && canFeint && //acc == 0 && 
             ((rawSide * startSide < 0) || (startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
         {
             nextState = new FeintPS(player, -startSide);

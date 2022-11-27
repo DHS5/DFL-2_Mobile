@@ -194,7 +194,7 @@ public class SettingsManager : MonoBehaviour
     public bool SoundOn 
     { 
         set 
-        { 
+        {
             DataManager.audioData.soundOn = value;
 
             if (Main != null) Main.GameAudioManager.SoundOn = value;
@@ -203,13 +203,13 @@ public class SettingsManager : MonoBehaviour
     }
     public float SoundVolume 
     { 
-        get { return DataManager.audioData.soundVolume; }
+        get { return Mathf.Log10(DataManager.audioData.soundVolume) * 20; }
         set 
         { 
             DataManager.audioData.soundVolume = value;
 
             if (Main != null) Main.GameAudioManager.SoundVolume = value;
-            else audioMixer.SetFloat("Volume", Mathf.Log10(value) * 20);
+            else if (DataManager.audioData.soundOn) audioMixer.SetFloat("Volume", Mathf.Log10(value) * 20);
         } 
     }
 
@@ -302,8 +302,8 @@ public class SettingsManager : MonoBehaviour
         ambianceVolumeSlider.value = data.ambianceVolume;
         enemiesVolumeSlider.value = data.enemiesVolume;
 
-        SoundOn = data.soundOn;
         SoundVolume = data.soundVolume;
+        SoundOn = data.soundOn;
     }
 
     private void LoadPlayerPrefs(PlayerPrefs prefs)

@@ -228,21 +228,23 @@ public class PlayerController : MonoBehaviour
         //float rawAcc = Input.GetAxisRaw("Vertical");
         rawAcc = touchManager.Acc;
 
-        if (rawAcc != 0)
-            realAcc += rawAcc * AccSensitivity * Time.deltaTime;
-        else if (rawAcc == 0)
-        {
-            if (realAcc > 0)
-            {
-                realAcc -= AccGravity * Time.deltaTime;
-                if (realAcc < 0) realAcc = 0f;
-            }
-            else if (realAcc < 0)
-            {
-                realAcc += AccGravity * Time.deltaTime;
-                if (realAcc > 0) realAcc = 0f;
-            }
-        }
+        //if (rawAcc != 0)
+        //    realAcc += rawAcc * AccSensitivity * Time.deltaTime;
+        //else if (rawAcc == 0)
+        //{
+        //    if (realAcc > 0)
+        //    {
+        //        realAcc -= AccGravity * Time.deltaTime;
+        //        if (realAcc < 0) realAcc = 0f;
+        //    }
+        //    else if (realAcc < 0)
+        //    {
+        //        realAcc += AccGravity * Time.deltaTime;
+        //        if (realAcc > 0) realAcc = 0f;
+        //    }
+        //}
+
+        realAcc = Mathf.Lerp(realAcc, rawAcc, AccSensitivity * 2 * Time.deltaTime);
 
         if (Mathf.Abs(realAcc) <= Snap) SnapAcc();
 

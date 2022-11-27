@@ -190,10 +190,13 @@ public class TouchManager : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < touches.Length; i++)
-            touches[i].Update();
+        if (main.gameManager.GameOn)
+        {
+            for (int i = 0; i < touches.Length; i++)
+                touches[i].Update();
 
-        MoveJoystick();
+            MoveJoystick();
+        }
     }
 
 

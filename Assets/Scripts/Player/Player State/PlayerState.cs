@@ -5,7 +5,7 @@ using UnityEngine;
 
 public enum PState 
 { RUN , SLOWRUN , SIDERUN , SLOWSIDERUN , SPRINT , JUMP , FEINT , JUKE , SPIN , SLIDE , SPRINTFEINT , FLIP , HIGHKNEE , 
-    GAMEOVER , SLIP , HURDLE }
+    GAMEOVER , SLIP , HURDLE , PREFEINT }
 
 
 public abstract class PlayerState
@@ -79,12 +79,12 @@ public abstract class PlayerState
     }
     public virtual void Update()
     {
-        acc = touch.Acc;
+        acc = controller.Acceleration;
         side = controller.Direction;
         rawAcc = touch.RawAcc;
         rawSide = touch.RawSide;
     }
-    public virtual void Exit() { stage = Event.EXIT; }// Debug.Log(name + " -> " + nextState.name); }
+    public virtual void Exit() { stage = Event.EXIT; } // Debug.Log(name + " -> " + nextState.name); }
 
 
 

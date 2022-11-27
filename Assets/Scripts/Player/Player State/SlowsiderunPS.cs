@@ -16,8 +16,6 @@ public class SlowsiderunPS : PlayerState
     public override void Enter()
     {
         if (anim) SetTrigger("Run");
-        
-        controller.Speed = att.NormalSpeed;
 
         base.Enter();
     }

@@ -32,11 +32,11 @@ public class AdvancedTouch
     private float startTime;
 
     [Tooltip("End time of the previous touch")]
-    private float endTime;
+    private float endTime = -0.1f;
     [Tooltip("End position of the previous touch")]
     private Vector2 endPosition;
 
-    public float Duration { get { return endTime - startTime; } }
+    public float Duration { get { return (endTime > 0 ? endTime : Time.time) - startTime; } }
 
 
 
@@ -88,6 +88,7 @@ public class AdvancedTouch
 
         initialPosition = touch.position;
         startTime = Time.time;
+        endTime = -0.1f;
 
         if (Number > 0 && initialPosition.x > Screen.width / 2)
             Status = TouchStatus.TAP;
@@ -110,6 +111,7 @@ public class AdvancedTouch
             {
                 CurrentMovement = CurrentPosition.y - initialPosition.y > 0 ? TouchMovement.UP : TouchMovement.DOWN;
             }
+            initialPosition = CurrentPosition;
         }
         else
         {
