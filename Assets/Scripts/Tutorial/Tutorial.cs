@@ -10,12 +10,18 @@ public class Tutorial : MonoBehaviour
 
 
     [SerializeField] private TutorialPopup[] tutos;
+    [SerializeField] private Animator controllerAnimator;
+    [SerializeField] private Animator fingerAnimator;
+    [SerializeField] private GameObject jumpButton;
 
+
+    private void Awake()
+    {
+        InitTutosArray();
+    }
 
     private void Start()
     {
-        InitTutosArray();
-
         StartCoroutine(TutorialCR());
     }
 
@@ -24,6 +30,9 @@ public class Tutorial : MonoBehaviour
         foreach (TutorialPopup tuto in tutos)
         {
             tuto.gameObject.SetActive(false);
+            tuto.controllerAnimator = controllerAnimator;
+            tuto.fingerAnimator = fingerAnimator;
+            tuto.jumpButton = jumpButton;
         }
     }
 

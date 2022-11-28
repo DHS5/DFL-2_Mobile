@@ -176,6 +176,12 @@ public class TouchManager : MonoBehaviour
         }
     }
 
+    private bool isActive = true;
+    public bool IsActive
+    {
+        get { return main.gameManager.GameOn && isActive; }
+    }
+
     private void Awake()
     {
         touchReferenceCenter.position = new Vector2(main.DataManager.gameplayData.joystickPosX, main.DataManager.gameplayData.joystickPosY);
@@ -191,7 +197,7 @@ public class TouchManager : MonoBehaviour
 
     private void Update()
     {
-        if (main.gameManager.GameOn)
+        if (IsActive)
         {
             for (int i = 0; i < touches.Length; i++)
                 touches[i].Update();
@@ -246,5 +252,14 @@ public class TouchManager : MonoBehaviour
     {
         if (black) jumpButtonImage.color = Color.gray;
         else jumpButtonImage.color = Color.white;
+    }
+
+    public void HideControllers(bool hide)
+    {
+        touchReferenceCenter.gameObject.SetActive(!hide);
+        joystick.gameObject.SetActive(!hide);
+        jumpButton.gameObject.SetActive(!hide);
+
+        isActive = !hide;
     }
 }

@@ -633,7 +633,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -821,6 +821,222 @@ MonoBehaviour:
   tutos:
   - {fileID: 425172480}
   - {fileID: 679768736}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
+--- !u!1001 &125147835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1678406103}
+    m_Modifications:
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: contentText
+      value: 'You just need 2 fingers :
+
+        Your left finger to use the joystick
+
+        and
+        your right finger to swipe and jump
+
+
+        The joystick is the circle
+        that move with your finger
+
+        The "Null" zone of the controller is
+        represented
+
+        by the static circle in the center, to run straight
+        forward you can remove your finger or keep the joystick in this null zone
+
+
+        You
+        can adjust the size of the null zone and the boundary of the controller in
+        the parameters, as well as the default position of the controller and the
+        size of the jump button'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showOkButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: timeBeforeShowingUp
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Name
+      value: FirstStep Tuto
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -400
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831550624252, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 72.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831550624252, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 55.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 180.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365832063065877, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100.26
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
+--- !u!224 &125147836 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 125147835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &125147837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 125147835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187098236
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,25 +1159,40 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
-      value: 'To make a flip,
+      value: 'To make a flip, slow your run
 
-        first you need to slow your run
-
-        then
-        jump while slowing
-
-        Now test on the defender
+        then swipe up while slowing
 
 
-        (NOTE : the
-        flip usually takes more jump power than the simple jump and there is a delay
-        between the moment you slow and the moment you can flip)'
+        (NOTE
+        : the flip usually takes more jump power than the simple jump and there is
+        a delay between the moment you slow and the moment you can flip)'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SLOW
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -1061,7 +1292,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -350
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -1263,7 +1494,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 424703173}
   - {fileID: 503275610}
   - {fileID: 74663105}
   m_Father: {fileID: 976045910}
@@ -1309,9 +1539,11 @@ MonoBehaviour:
     weapons: []
   goalPostActive: 0
   tutos:
-  - {fileID: 424703177}
-  - {fileID: 503275612}
+  - {fileID: 503275611}
   - {fileID: 74663106}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &280318574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1725,7 @@ PrefabInstance:
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
@@ -1585,6 +1817,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 326239148}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Ok
+      objectReference: {fileID: 0}
     - target: {fileID: 7784103328525665605, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -1618,19 +1860,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 326239147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab87443e9954a994b83c436906abdc4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentText: 'Now turn using the direction keys
+  contentText: 'To shift
 
-    And slow down with the backward
-    key while turning
+    Move the joystick to the bottom right/left
 
-    To make a ''Shift'''
+    A shift
+    is simply a bigger direction change
+
+    than the first one
+
+    The shift is
+    one of the most useful move'
   timeBeforeShowingUp: 3
-  showOkButton: 0
+  showOkButton: 1
+  controllerTrigger: SHIFT
+  fingerTrigger: 
+  showController: 1
+  showFinger: 0
+  showJumpButton: 0
   text: {fileID: 326239150}
   okButton: {fileID: 326239149}
+  controllerAnimator: {fileID: 0}
+  fingerAnimator: {fileID: 0}
+  jumpButton: {fileID: 0}
 --- !u!114 &326239149 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
@@ -1757,19 +2012,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'The slide works exactly like the sprint feint
 
 
-        You first need
-        to sprint
+        First sprint,
+        then swipe down while you sprint
 
-        Then, while you sprint, quickly press the slow down key
-
-
-        This
-        time, your player will slide on his knees to avoid a threat coming from above
-        him'
+        This time, your player will slide
+        on his knees to avoid a threat coming from above him'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -1778,8 +2034,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: fingerTrigger
+      value: DOWN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SPRINT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: timeBeforeShowingUp
-      value: 2
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -2050,6 +2321,7 @@ PrefabInstance:
       propertyPath: contentText
       value: 'The high knee is an uncommon skill that can save you if used correctly
 
+
         You
         can try again or go back to menu if you understood how to highknee'
       objectReference: {fileID: 0}
@@ -2193,239 +2465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &424703172
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 258292055}
-    m_Modifications:
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 980
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 226.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872748, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -123.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872749, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103327962872749, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941545, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_Name
-      value: Shift Tuto
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 246.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -250
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328525665605, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 39.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 7784103328525665605, guid: a037c7c49042f24408181c4ebe0cb67d,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30.21
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a037c7c49042f24408181c4ebe0cb67d, type: 3}
---- !u!224 &424703173 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
-    type: 3}
-  m_PrefabInstance: {fileID: 424703172}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &424703174 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
-    type: 3}
-  m_PrefabInstance: {fileID: 424703172}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &424703175 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7784103327962872749, guid: a037c7c49042f24408181c4ebe0cb67d,
-    type: 3}
-  m_PrefabInstance: {fileID: 424703172}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &424703176 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7784103328393941545, guid: a037c7c49042f24408181c4ebe0cb67d,
-    type: 3}
-  m_PrefabInstance: {fileID: 424703172}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &424703177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424703176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab87443e9954a994b83c436906abdc4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: 'The spin is a little bit more complex than the other skills
-
-    You
-    first need to make a shift
-
-
-    For reminder :
-
-    Start by turning using the
-    direction keys
-
-    Then slow down with the backward key while turning'
-  timeBeforeShowingUp: 2
-  showOkButton: 0
-  text: {fileID: 424703175}
-  okButton: {fileID: 424703174}
 --- !u!1001 &425172478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2435,22 +2474,40 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'The sprint feint is an advanced skill
 
 
-        You first need to sprint
+        First sprint, then
+        swipe down while you sprint
 
-        Then,
-        while you sprint, quickly press the slow down key
-
-        Your player will
-        suddenly stop his run for a brief moment'
+        Your player will suddenly stop his run
+        for a brief moment'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: DOWN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SPRINT
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -2587,11 +2644,283 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &426973293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 976045910}
+    m_Modifications:
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -700
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337814, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_Name
+      value: FingerController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955132894609337814, guid: 7dee71f8b8259254f8b0ead5799b9872,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7dee71f8b8259254f8b0ead5799b9872, type: 3}
+--- !u!224 &426973294 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5955132894609337813, guid: 7dee71f8b8259254f8b0ead5799b9872,
+    type: 3}
+  m_PrefabInstance: {fileID: 426973293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &426973295 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6202386650116212665, guid: 7dee71f8b8259254f8b0ead5799b9872,
+    type: 3}
+  m_PrefabInstance: {fileID: 426973293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &434424780 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
     type: 3}
   m_PrefabInstance: {fileID: 5757365831793196379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &457233353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 976045910}
+    m_Modifications:
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675930, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_Name
+      value: ControllerCenter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208154663358675930, guid: c6a79c5610a466f4c9328ffea0321b9a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6a79c5610a466f4c9328ffea0321b9a, type: 3}
+--- !u!224 &457233354 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6208154663358675929, guid: c6a79c5610a466f4c9328ffea0321b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 457233353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &457233355 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5836561638641764363, guid: c6a79c5610a466f4c9328ffea0321b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 457233353}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &482226507
 GameObject:
@@ -2741,8 +3070,12 @@ PrefabInstance:
       propertyPath: contentText
       value: 'The truck is a powerful skill but you need to use it wisely
 
-        You
-        can try again or go back to menu if you understood how to truck'
+        only
+        enemies in front of you will be trucked
+
+
+        You can try again or go
+        back to menu if you understood how to truck'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -2891,6 +3224,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258292055}
     m_Modifications:
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: contentText
+      value: 'To spin, you first need to shift
+
+        using the joystick
+
+        Then
+        swipe in the opposite direction of your shift
+
+
+        You should see the
+        player making a spin in the direction that you swiped'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showOkButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: LEFT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SHIFT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: timeBeforeShowingUp
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_Name
@@ -2914,7 +3291,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -3006,6 +3383,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 503275611}
+    - target: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Ok
+      objectReference: {fileID: 0}
     - target: {fileID: 5757365831550624252, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -3052,8 +3439,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -123.3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
 --- !u!224 &503275610 stripped
 RectTransform:
@@ -3061,58 +3447,16 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 503275609}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &503275611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 503275609}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &503275612
+--- !u!114 &503275611 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503275611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ee0068fbd7f8e40850ca9c4248e0c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: 'Now that you''re shifting in the direction of your choice (left/right)
-
-    To
-    spin, you need to quickly press the opposite direction key (right/left)
-
-
-    You
-    should see the player making a spin in the direction that you just pressed'
-  timeBeforeShowingUp: 0.5
-  showOkButton: 0
-  text: {fileID: 503275614}
-  okButton: {fileID: 503275613}
---- !u!114 &503275613 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+  m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
     type: 3}
   m_PrefabInstance: {fileID: 503275609}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &503275614 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365832063065876, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 503275609}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &510736337
@@ -5149,7 +5493,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -5271,11 +5615,11 @@ PrefabInstance:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: contentText
-      value: 'The juke is an easy move to master and a very efficient one to use
-        in match
+      value: 'The juke is an easy move to master and a very efficient one to dodge
+        a defender in match
 
-        You can try again or go back to menu if you understood
-        how to juke'
+        You can try again or go back to menu if you
+        understood how to juke'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -5706,6 +6050,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 1159222575}
   - {fileID: 596325162}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1001 &869468934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5715,28 +6062,41 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
-      value: 'The juke is one of the most powerful move, it''s super efficient to
-        dodge an enemy coming right your way
+      value: 'The juke is one of the most powerful move
 
 
-        To juke, you need to slow
-        your run
-
-        Then press a direction key (left/right) while slowing
-
-        You
-        will see your player juke on the side you chose
+        To juke, slow your
+        run then swipe left/right while slowing
 
 
-        (NOTE : there is
-        a little delay between the moment you start to slow down and the moment you
-        can juke)'
+        (NOTE : there is a little
+        delay between the moment you start to slow down and the moment you can juke)'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: RIGHT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SLOW
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -5836,7 +6196,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -5882,20 +6242,41 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'Just like for the hurdle,
 
         sprint in the defender''s direction
 
         then
-        jump on him while sprinting
+        swipe up on him while sprinting
 
-        you will high knee him and put him ko'
+        you will high knee him and put him
+        ko'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SPRINT
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -6025,6 +6406,324 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
     type: 3}
   m_PrefabInstance: {fileID: 880455101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &908006566
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 976045910}
+    m_Modifications:
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107789, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_Name
+      value: JumpButton ForTuto
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543772611194107789, guid: 366774447b4ee8346a4d9522b6f2146d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 366774447b4ee8346a4d9522b6f2146d, type: 3}
+--- !u!224 &908006567 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3543772611194107788, guid: 366774447b4ee8346a4d9522b6f2146d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908006566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &908006568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3543772611194107789, guid: 366774447b4ee8346a4d9522b6f2146d,
+    type: 3}
+  m_PrefabInstance: {fileID: 908006566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &934173618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1046744734}
+    m_Modifications:
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: contentText
+      value: 'Note that rather than swiping in the other direction
+
+        You can
+        also move your joystick in the
+
+        opposite direction of the swipe,
+
+        just
+        after swiping
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showOkButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: LEFTFEINT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: FEINT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: timeBeforeShowingUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Name
+      value: Feint2ndOption TutoPopup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
+--- !u!224 &934173619 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 934173618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &934173620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 934173618}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -6206,6 +6905,9 @@ RectTransform:
   - {fileID: 1577835515}
   - {fileID: 89080645}
   - {fileID: 1368729035}
+  - {fileID: 457233354}
+  - {fileID: 426973294}
+  - {fileID: 908006567}
   m_Father: {fileID: 1576312717}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6443,6 +7145,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 869468936}
   - {fileID: 779804061}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &1046744733
 GameObject:
   m_ObjectHideFlags: 0
@@ -6473,6 +7178,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1855528725}
+  - {fileID: 934173619}
   - {fileID: 769496454}
   m_Father: {fileID: 976045910}
   m_RootOrder: 5
@@ -6518,113 +7224,29 @@ MonoBehaviour:
   goalPostActive: 0
   tutos:
   - {fileID: 1855528726}
+  - {fileID: 934173620}
   - {fileID: 769496455}
---- !u!1 &1052652182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052652183}
-  - component: {fileID: 1052652185}
-  - component: {fileID: 1052652184}
-  - component: {fileID: 1052652186}
-  m_Layer: 5
-  m_Name: Jump Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1052652183
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
+--- !u!224 &1052652183 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8108285670974248414}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052652182}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 404330672}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 350}
-  m_Pivot: {x: 1, y: 0}
---- !u!114 &1052652184
+--- !u!114 &1052652184 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8108285670330558278, guid: e4dc6de5397575e46bded0497f47685b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8108285670974248414}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052652182}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ced99a8893e643f45aa10b97372bc045, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1052652185
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052652182}
-  m_CullTransparentMesh: 1
---- !u!114 &1052652186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052652182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 675627221}
-          m_TargetAssemblyTypeName: TouchManager, Assembly-CSharp
-          m_MethodName: set_Jump
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
 --- !u!1 &1077842308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,11 +8066,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'Sprint in the defender''s direction
 
-        then jump a little before
-        him while sprinting
+        then swipe up a little
+        before him while sprinting
 
         you will hurdle over him with ease
 
@@ -7460,6 +8087,21 @@ PrefabInstance:
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: UP
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SPRINT
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -7711,6 +8353,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 2016258994}
   - {fileID: 500276111}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &1212358935
 GameObject:
   m_ObjectHideFlags: 0
@@ -8561,6 +9206,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 207358672}
   - {fileID: 1224590722}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &1368729034
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,6 +9285,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 362328348}
   - {fileID: 1584983161}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1001 &1378119779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8644,6 +9295,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1678406103}
     m_Modifications:
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: contentText
+      value: 'To change direction
+
+        move the joystick on the left or right'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showOkButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: LEFTRIGHT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: timeBeforeShowingUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_Name
@@ -8667,7 +9345,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -8805,8 +9483,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -123.3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
 --- !u!224 &1378119780 stripped
 RectTransform:
@@ -8816,56 +9493,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1378119781 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+  m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
     type: 3}
   m_PrefabInstance: {fileID: 1378119779}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1378119782 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365832063065876, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1378119779}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1378119783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1378119779}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1378119784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378119783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016a19344c86b1c478c5b26f1a21bd8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: 'Use the direction keys
-
-    (A/D   Q/D   left/right)
-
-    to avoid
-    the goal post'
-  timeBeforeShowingUp: 0.5
-  showOkButton: 0
-  text: {fileID: 1378119782}
-  okButton: {fileID: 1378119781}
 --- !u!1 &1406419518
 GameObject:
   m_ObjectHideFlags: 0
@@ -9543,6 +10180,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 1872217461}
   - {fileID: 1971830824}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1001 &1584983159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9988,6 +10628,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1969597158}
+  - {fileID: 125147836}
   - {fileID: 1378119780}
   - {fileID: 6114811646153986425}
   - {fileID: 1830836650}
@@ -10035,15 +10676,19 @@ MonoBehaviour:
       type: 3}
     parkour: 0
     weapons: []
-  goalPostActive: 1
+  goalPostActive: 0
   tutos:
   - {fileID: 1969597159}
-  - {fileID: 1378119784}
+  - {fileID: 125147837}
+  - {fileID: 1378119781}
   - {fileID: 6114811646153986431}
   - {fileID: 1830836654}
-  - {fileID: 1937103370}
+  - {fileID: 1937103369}
   - {fileID: 326239148}
   - {fileID: 5757365831793196380}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &1716062208
 GameObject:
   m_ObjectHideFlags: 0
@@ -10120,6 +10765,9 @@ MonoBehaviour:
   tutos:
   - {fileID: 880455103}
   - {fileID: 422624961}
+  controllerAnimator: {fileID: 457233355}
+  fingerAnimator: {fileID: 426973295}
+  jumpButton: {fileID: 908006568}
 --- !u!1 &1738297995
 GameObject:
   m_ObjectHideFlags: 0
@@ -10657,7 +11305,7 @@ PrefabInstance:
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
@@ -10749,6 +11397,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1830836654}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Ok
+      objectReference: {fileID: 0}
     - target: {fileID: 7784103328525665605, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -10806,23 +11464,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830836653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45d3ee7a5e9b7244997ed8d193ed88a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentText: 'Use the forward key
+  contentText: 'To sprint
 
-    (W    Z    up)
-
-    to sprint
+    Move the joystick to the top
 
 
-    (NOTE
-    : Once you hit the sprint button, the gauge will decrease whether you sprint
-    or not)'
+    (NOTE : Once you
+    start the sprint, the gauge will decrease whether you sprint or not)'
   timeBeforeShowingUp: 3
-  showOkButton: 0
+  showOkButton: 1
+  controllerTrigger: SPRINT
+  fingerTrigger: 
+  showController: 1
+  showFinger: 0
+  showJumpButton: 0
   text: {fileID: 1830836652}
   okButton: {fileID: 1830836651}
+  controllerAnimator: {fileID: 0}
+  fingerAnimator: {fileID: 0}
+  jumpButton: {fileID: 0}
 --- !u!1001 &1855528724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10832,28 +11495,33 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'The feint is the quickest move of the players arsenal and the majority
         of them are able to do it
 
 
-        To make a feint, you need to be running
-        straight forward
+        To make a feint, you need to run straight
+        forward
 
-        Then, press a direction key (left/right)
+        Then, swipe left/right
 
-        And
-        very quickly after press the other direction key (right/left)
-
-
-        You
-        will see the player make a feint in the first direction you pressed then
-        go quickly the opposite way'
+        And very quickly swipe in
+        the other direction'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: FEINT
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -10953,7 +11621,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -11134,25 +11802,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'The juke spin is a complex move
 
+        First, do a juke (if you don''t
+        know how, go do the Juke tutorial)
 
-        First, you need to do a juke
-        (if you don''t know how, go do the Juke tutorial)
-
-        Then immediatly
-        after your juke, press the direction key opposite to the direction of your
-        juke
+        Then quickly swipe in the opposite
+        direction of your juke
 
 
-        If you do it successfully, you will see your player juke then
-        right away go back the other way with a spin'
+        If you do it successfully, you will see
+        your player juke then right away go back the other way with a spin'
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: fingerTrigger
+      value: FEINT
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SLOW
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -11252,7 +11938,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400
+      value: -300
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -11528,6 +12214,32 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1678406103}
     m_Modifications:
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: contentText
+      value: 'To jump
+
+        Press the green button on the bottom right
+
+
+        (NOTE
+        : You lose energy every time you jump but the gauge is always recharging)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showOkButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showJumpButton
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: timeBeforeShowingUp
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_Name
@@ -11546,7 +12258,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -11684,8 +12396,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -123.3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d950460394cd8af4b9c27dd3558a1cd6, type: 3}
 --- !u!224 &1937103368 stripped
 RectTransform:
@@ -11693,57 +12404,16 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1937103367}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1937103369 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937103367}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1937103370
+--- !u!114 &1937103369 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937103369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d36603754561eda44b8e35c510ad8c08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentText: 'Use the space key
-
-    to jump
-
-
-    (NOTE : You lose energy every
-    time you jump but the gauge is always recharging)'
-  timeBeforeShowingUp: 3
-  showOkButton: 0
-  text: {fileID: 1937103372}
-  okButton: {fileID: 1937103371}
---- !u!114 &1937103371 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+  m_CorrespondingSourceObject: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
     type: 3}
   m_PrefabInstance: {fileID: 1937103367}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1937103372 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5757365832063065876, guid: d950460394cd8af4b9c27dd3558a1cd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1937103367}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1969597157
@@ -12204,8 +12874,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
+      propertyPath: showFinger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
       propertyPath: contentText
       value: 'Simply sprint right through the defender to truck him
+
 
         (NOTE
         : few players are able to truck)'
@@ -12214,6 +12890,16 @@ PrefabInstance:
         type: 3}
       propertyPath: showOkButton
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: showController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: controllerTrigger
+      value: SPRINT
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -12477,82 +13163,12 @@ MonoBehaviour:
   m_MaskInteraction: 85
   m_UseStencil: 1
   m_RaycastFilter: 0
---- !u!1 &2068960723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2068960724}
-  - component: {fileID: 2068960726}
-  - component: {fileID: 2068960725}
-  m_Layer: 5
-  m_Name: Joystick
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2068960724
+--- !u!224 &2068960724 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+    type: 3}
+  m_PrefabInstance: {fileID: 3882068334279160373}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068960723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 404330672}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400, y: 280}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2068960725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068960723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 40380b7c512cb784d8d83e65830ff65b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2068960726
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068960723}
-  m_CullTransparentMesh: 1
 --- !u!1001 &2109775822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13211,6 +13827,125 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2612022466269539003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3882068334279160373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404330672}
+    m_Modifications:
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439393, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882068332254439398, guid: 5e0c8105483d8aa4b8d219c39ebef392,
+        type: 3}
+      propertyPath: m_Name
+      value: Joystick
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e0c8105483d8aa4b8d219c39ebef392, type: 3}
 --- !u!1001 &4096758847349539671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13276,7 +14011,7 @@ PrefabInstance:
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7784103328393941550, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
@@ -13368,6 +14103,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6114811646153986431}
+    - target: {fileID: 7784103328451139896, guid: a037c7c49042f24408181c4ebe0cb67d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Ok
+      objectReference: {fileID: 0}
     - target: {fileID: 7784103328525665605, guid: a037c7c49042f24408181c4ebe0cb67d,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -13415,7 +14160,7 @@ PrefabInstance:
         type: 3}
       propertyPath: contentText
       value: You can now test the controls, practice your skill moves and go back
-        to menu (Tab) when you're game ready
+        to menu when you're game ready
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310026, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -13430,7 +14175,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_Name
-      value: Tutorial Popup
+      value: End Popup
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310032, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -13450,7 +14195,7 @@ PrefabInstance:
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5757365831422310039, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
@@ -13542,6 +14287,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5757365831793196380}
+    - target: {fileID: 5757365831482391937, guid: d950460394cd8af4b9c27dd3558a1cd6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Ok
+      objectReference: {fileID: 0}
     - target: {fileID: 5757365831550624252, guid: d950460394cd8af4b9c27dd3558a1cd6,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -13612,15 +14367,145 @@ MonoBehaviour:
   m_GameObject: {fileID: 6114811646153986430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46c58cc77a66a6a47be22f012a054ea1, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fc33a19a8fc7a42a1d90124f169426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contentText: 'Use the backward key
+  contentText: 'To slow down your run
 
-    (Z    S    down)
-
-    to slow your run'
+    move the joystick in the bottom center'
   timeBeforeShowingUp: 3
-  showOkButton: 0
+  showOkButton: 1
+  controllerTrigger: SLOW
+  fingerTrigger: 
+  showController: 1
+  showFinger: 0
+  showJumpButton: 0
   text: {fileID: 4096758847349539673}
   okButton: {fileID: 4096758847349539672}
+  controllerAnimator: {fileID: 0}
+  fingerAnimator: {fileID: 0}
+  jumpButton: {fileID: 0}
+--- !u!1001 &8108285670974248414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 404330672}
+    m_Modifications:
+    - target: {fileID: 8108285670330558276, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 675627221}
+    - target: {fileID: 8108285670330558280, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_Name
+      value: Jump Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8108285670330558281, guid: e4dc6de5397575e46bded0497f47685b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e4dc6de5397575e46bded0497f47685b, type: 3}
