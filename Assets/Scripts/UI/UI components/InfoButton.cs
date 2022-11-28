@@ -40,10 +40,14 @@ public class InfoButton : MonoBehaviour
 
     private bool parentInteractable;
 
+    readonly float infoButtonSize = 55;
 
     private void Awake()
     {
         textComponent.text = text;
+
+        (transform as RectTransform).SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, infoButtonSize);
+        (transform as RectTransform).SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, infoButtonSize);
 
         SearchParent();
 
