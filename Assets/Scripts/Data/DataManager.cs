@@ -169,7 +169,7 @@ public class DataManager : MonoBehaviour
 
     private int onlineFileID;
     private bool onlineFileIDLoaded = false;
-
+    private bool quitting = false;
     private bool reloadAll = false;
 
 
@@ -445,6 +445,8 @@ public class DataManager : MonoBehaviour
 
         if (ConnectionManager.SessionConnected)
         {
+            yield return GetOnlineFileID();
+
             LootLockerSDKManager.UploadPlayerFile(Application.persistentDataPath + "/savefile.json", "save", (response) =>
             {
                 if (response.success)
@@ -463,6 +465,10 @@ public class DataManager : MonoBehaviour
 
                     OnlineFileID = response.id;
                 }
+                else
+                {
+                    done = true;
+                }
             });
 
             yield return new WaitUntil(() => done);
@@ -472,19 +478,17 @@ public class DataManager : MonoBehaviour
 
     public void QuitGame()
     {
-        StartCoroutine(Quit());
+        if (!quitting)
+        {
+            quitting = true;
+            StartCoroutine(Quit());
+        }
     }
 
     private IEnumerator Quit()
     {
         yield return StartCoroutine(SavePlayerData(false));
-
-#if UNITY_EDITOR
-        EditorApplication.ExitPlaymode();
-#elif UNITY_WEBGL
-#else
         Application.Quit();
-#endif
     }
 
     // # LOAD #
