@@ -15,7 +15,7 @@ MonoBehaviour:
   siderunTime: 0.3
   siderunDelay: 0
   jukeTime: 0.5
-  jukeDelay: 0.1
+  jukeDelay: 0.25
   feintTime: 0.25
   spinTime: 0.5
   slideTime: 0.9

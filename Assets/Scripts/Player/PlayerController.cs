@@ -159,12 +159,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         FilterDir();
-        FilterAcc();
+        //FilterAcc();
 
         if (!player.gameplay.freeze)
             CurrentState = CurrentState.Process();
 
-        Velocity = ( Vector3.forward * FSpeed + Vector3.right * sideSpeed ) * Time.deltaTime;
+        Velocity = ( Vector3.forward * FSpeed + Vector3.right * SideSpeed ) * Time.deltaTime;
 
         RechargeJump();
     }
@@ -198,28 +198,36 @@ public class PlayerController : MonoBehaviour
 
     private void FilterDir()
     {
-        //float rawDir = Input.GetAxisRaw("Horizontal");
         rawDir = touchManager.Side;
 
-        //if (rawDir != 0)
-        //    realDir += rawDir * DirSensitivity * Time.deltaTime;
-        //else if (rawDir == 0)
+        if (Mathf.Abs(realDir - rawDir) <= Snap + DirGravity * Time.deltaTime)
+        {
+            SnapDir();
+            return;
+        }
+
+        //if (rawDir == 0)
         //{
-        //    if (realDir > 0)
+        //    int side = realDir > 0 ? -1 : 1;
+        //    realDir += side * DirGravity * Time.deltaTime;
+        //    if (realDir * side < 0) realDir = 0;
+        //}
+        //else
+        //{
+        //    if (rawDir * realDir <= 0 || Mathf.Abs(realDir) < Mathf.Abs(rawDir))
         //    {
-        //        realDir -= DirGravity * Time.deltaTime;
-        //        if (realDir < 0) realDir = 0f;
+        //        realDir += (rawDir > 0 ? 1 : -1) * DirSensitivity * Time.deltaTime;
         //    }
-        //    else if (realDir < 0)
+        //    else
         //    {
-        //        realDir += DirGravity * Time.deltaTime;
-        //        if (realDir > 0) realDir = 0f;
+        //        realDir += (realDir > 0 ? -1 : 1) * DirGravity * Time.deltaTime;
         //    }
         //}
 
+
         realDir = Mathf.Lerp(realDir, rawDir, DirSensitivity * Time.deltaTime);
 
-        if (Mathf.Abs(realDir) <= Snap) SnapDir();
+        if (Mathf.Abs(realDir - rawDir) <= Snap) SnapDir();
 
         realDir = Mathf.Clamp(realDir, -1, 1);
     }
@@ -251,7 +259,7 @@ public class PlayerController : MonoBehaviour
         realAcc = Mathf.Clamp(realAcc, -1, 1);
     }
 
-    public void SnapDir() { realDir = 0f; }
+    public void SnapDir() { realDir = touchManager.Side; }
     public void SnapAcc() { realAcc = 0f; }
 
     public void FullDir(float side) { realDir = side / Mathf.Abs(side); }

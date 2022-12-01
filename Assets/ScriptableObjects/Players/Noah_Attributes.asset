@@ -17,7 +17,7 @@ MonoBehaviour:
   dirGravity: 4
   accSensitivity: 6
   accGravity: 6
-  snap: 0.001
+  snap: 0.01
   normalSpeed: 11
   normalSideSpeed: 5
   accelerationM: 1.6
