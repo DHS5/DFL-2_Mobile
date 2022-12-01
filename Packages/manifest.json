@@ -2,6 +2,8 @@
   "dependencies": {
     "com.coffee.softmask-for-ugui": "https://github.com/mob-sakai/SoftMaskForUGUI.git",
     "com.lootlocker.lootlockersdk": "https://github.com/LootLocker/unity-sdk.git",
+    "com.unity.adaptiveperformance": "4.0.1",
+    "com.unity.adaptiveperformance.samsung.android": "4.0.1",
     "com.unity.collab-proxy": "1.17.6",
     "com.unity.feature.worldbuilding": "1.0.1",
     "com.unity.ide.rider": "3.0.16",
