@@ -12,6 +12,8 @@ public class HighKneePS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("HighKnee");
         player.gameplay.isHighKneeing = true;
 
@@ -22,8 +24,6 @@ public class HighKneePS : PlayerState
         player.playerManager.JumpUIAnimation(att.HighKneeCost);
 
         SlowMotion(0.5f, 8f, 2);
-
-        base.Enter();
     }
 
     public override void Update()

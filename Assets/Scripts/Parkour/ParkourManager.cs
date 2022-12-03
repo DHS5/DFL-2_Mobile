@@ -33,7 +33,7 @@ public class ParkourManager : MonoBehaviour
         {
             dataManager.gameData.gameDifficulty = GameDifficulty.ROOKIE;
             dataManager.gameData.gameOptions.Clear();
-            dataManager.gameData.gameWeather = GameWeather.NIGHT;
+            dataManager.gameData.gameWeather = GameWeather.PARKOUR;
             dataManager.gameData.player = parkourPlayer;
             dataManager.gameData.stadium = parkourStadium;
         }

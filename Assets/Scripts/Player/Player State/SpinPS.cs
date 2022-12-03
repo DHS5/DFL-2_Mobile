@@ -13,6 +13,8 @@ public class SpinPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Spin");
         SetFloat("Dir", startSide);
 
@@ -24,8 +26,6 @@ public class SpinPS : PlayerState
         controller.SideSpeed = att.SpinSideSpeed * startSide;
 
         SlowMotion(UD.spinTime, 5f, 1);
-
-        base.Enter();
     }
 
     public override void Update()

@@ -14,6 +14,8 @@ public class PreFeintPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetFloat("Dir", startSide);
         SetTrigger("Side");
         animTime = UD.siderunTime;
@@ -21,8 +23,6 @@ public class PreFeintPS : PlayerState
         controller.Speed = att.NormalSpeed;
         controller.SideSpeed = att.NormalSideSpeed * startSide;
         PlayerOrientation();
-
-        base.Enter();
     }
 
 

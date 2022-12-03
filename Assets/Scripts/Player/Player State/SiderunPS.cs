@@ -19,19 +19,18 @@ public class SiderunPS : PlayerState
 
     public override void Enter()
     {
-        SetFloat("Dir", startSide);
-        if (canFeint)
-        {
-            SetTrigger("Side");
-            animTime = UD.siderunTime;
-        }
-        else if (anim) SetTrigger("Run");
+        base.Enter();
+
+        //SetFloat("Dir", startSide);
+        //if (canFeint)
+        //{
+        //    SetTrigger("Side");
+        //    animTime = UD.siderunTime;
+        //}
+        //else 
+        if (anim) SetTrigger("Run");
 
         controller.Speed = att.NormalSpeed;
-        controller.SideSpeed = att.NormalSideSpeed * side;
-        PlayerOrientation();
-
-        base.Enter();
     }
 
 
@@ -51,7 +50,7 @@ public class SiderunPS : PlayerState
             stage = Event.EXIT;
         }
 
-        if (!canFeint || Time.time >= startTime + animTime)
+        else if (!canFeint || Time.time >= startTime + animTime)
         {
             if (nextState == null)
             {
@@ -88,18 +87,11 @@ public class SiderunPS : PlayerState
             }
             else stage = Event.EXIT;
         }
-        if (Time.time >= startTime  + 0.1f && Time.time <= startTime + 0.7f && canFeint && //acc == 0 && 
-            ((rawSide * startSide < 0) || (startSide < 0 && RightSwipe) || (startSide > 0 && LeftSwipe)))
-        {
-            nextState = new FeintPS(player, -startSide);
-            SetFloat("Dir", -startSide);
-            SetTrigger("Feint");
-        }
     }
 
     public override void Exit()
     {
-        ResetTrigger("Side");
+        //ResetTrigger("Side");
         ResetTrigger("Run");
 
         base.Exit();

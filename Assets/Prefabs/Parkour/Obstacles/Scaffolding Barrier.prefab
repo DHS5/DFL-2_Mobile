@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8600357783002153824}
   - component: {fileID: 1411138728557508567}
   - component: {fileID: 6327793480386140221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.006
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2792935926807280075}
   - component: {fileID: 8455897084214902899}
   - component: {fileID: 8869611636607632898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.006 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 2002784487287725290}
   - component: {fileID: 7015348313776037407}
   - component: {fileID: 1964845900891411105}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.004
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 505435001942814113}
   - component: {fileID: 4678365322976514247}
   - component: {fileID: 9209586400354441460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.002 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 3528619125872798998}
   - component: {fileID: 5927999709229199555}
   - component: {fileID: 1176331886224445471}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.001
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -499,7 +499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7908479640896150146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Scaffolding Barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 7983362543050161865}
   - component: {fileID: 3203091177239712506}
   - component: {fileID: 4661359365596092620}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.003 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 2858752796303497098}
   - component: {fileID: 1752721540925280612}
   - component: {fileID: 4632995918577141241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.002
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 4700060540280536215}
   - component: {fileID: 3811998782279780509}
   - component: {fileID: 1762115599965436304}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.007
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -843,7 +843,7 @@ GameObject:
   - component: {fileID: 4036680905198255737}
   - component: {fileID: 6384394024220885195}
   - component: {fileID: 7934013059972284187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.003
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ GameObject:
   - component: {fileID: 5699846826745316845}
   - component: {fileID: 4615770027818278847}
   - component: {fileID: 719081593375783321}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.005 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 6458617457457872137}
   - component: {fileID: 7935212874546408680}
   - component: {fileID: 5293975296398067625}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ GameObject:
   - component: {fileID: 2946752027967220161}
   - component: {fileID: 1899451459032764938}
   - component: {fileID: 4967393464916846772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.004 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 1420949351080902154}
   - component: {fileID: 192799950739671056}
   - component: {fileID: 8261873926319697185}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1361,7 +1361,7 @@ GameObject:
   - component: {fileID: 1884668359559514053}
   - component: {fileID: 6754959040187308771}
   - component: {fileID: 671722860759483938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.001 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1459,7 +1459,7 @@ GameObject:
   - component: {fileID: 4321540629462620430}
   - component: {fileID: 7413649879267069722}
   - component: {fileID: 4957865933152796850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.007 (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 1204531444967230973}
   - component: {fileID: 5254000673203020004}
   - component: {fileID: 6135992915851195120}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder.005
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

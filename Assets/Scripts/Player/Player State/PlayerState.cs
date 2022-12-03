@@ -35,7 +35,7 @@ public abstract class PlayerState
     protected float rawSide;
     protected float startSide;
 
-    protected bool Jump { get { return touch.Jump || touch.Swipe == TouchMovement.UP; } }
+    protected bool Jump { get { return touch.Jump; } }
     protected bool RightSwipe { get { return touch.Swipe == TouchMovement.RIGHT; } }
     protected bool LeftSwipe { get { return touch.Swipe == TouchMovement.LEFT; } }
     protected bool DownSwipe { get { return touch.Swipe == TouchMovement.DOWN; } }
@@ -76,15 +76,23 @@ public abstract class PlayerState
     { 
         stage = Event.UPDATE;
         startTime = Time.time;
+
+        GetInputs();
     }
     public virtual void Update()
     {
-        acc = touch.Acc;
+        GetInputs();
+    }
+    public virtual void Exit() { stage = Event.EXIT; } // Debug.Log(name + " -> " + nextState.name); }
+
+
+    protected void GetInputs()
+    {
+        acc = controller.Acceleration;
         side = controller.Direction;
         rawAcc = touch.RawAcc;
         rawSide = touch.RawSide;
     }
-    public virtual void Exit() { stage = Event.EXIT; } // Debug.Log(name + " -> " + nextState.name); }
 
 
 
@@ -93,8 +101,8 @@ public abstract class PlayerState
         if (stage == Event.GAMEOVER) { return new GameOverPS(player); }
 
         if (stage == Event.ENTER) Enter();
-        else if (stage == Event.UPDATE) Update();
-        else if (stage == Event.EXIT)
+        if (stage == Event.UPDATE) Update();
+        if (stage == Event.EXIT)
         {
             Exit();
             return nextState;

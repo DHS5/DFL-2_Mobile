@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4010011899531760537}
   - component: {fileID: 5471281195308386794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 5922630909396902185}
   - component: {fileID: 7322486837477830284}
   - component: {fileID: 4790217786318527046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LightSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

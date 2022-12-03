@@ -15,9 +15,9 @@ public class SlowsiderunPS : PlayerState
 
     public override void Enter()
     {
-        if (anim) SetTrigger("Run");
-
         base.Enter();
+
+        if (anim) SetTrigger("Run");
     }
 
     public override void Update()
@@ -49,16 +49,16 @@ public class SlowsiderunPS : PlayerState
             nextState = new SprintPS(player);
             stage = Event.EXIT;
         }
-        // Slow
-        else if (side == 0)
-        {
-            nextState = new SlowrunPS(player);
-            stage = Event.EXIT;
-        }
         // Siderun
         else if (acc == 0 && side != 0)
         {
             nextState = new SiderunPS(player, side / Mathf.Abs(side), false, false);
+            stage = Event.EXIT;
+        }
+        // Slow
+        else if (acc < 0 && side == 0)
+        {
+            nextState = new SlowrunPS(player);
             stage = Event.EXIT;
         }
         // Run

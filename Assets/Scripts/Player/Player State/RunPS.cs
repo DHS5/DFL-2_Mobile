@@ -14,13 +14,13 @@ public class RunPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         if (anim) SetTrigger("Run");
         SetFloat("Dir", 0f);
 
         controller.Speed = att.NormalSpeed;
         controller.SideSpeed = 0f;
-
-        base.Enter();
     }
 
     public override void Update()

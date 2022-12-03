@@ -13,6 +13,8 @@ public class JukePS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         player.effects.AudioPlayerEffort(false);
 
         SetTrigger("Juke");
@@ -23,8 +25,6 @@ public class JukePS : PlayerState
         controller.SideSpeed = att.JukeSideSpeed * startSide;
 
         SlowMotion(UD.jukeTime, 8f, 3);
-
-        base.Enter();
     }
 
     public override void Update()

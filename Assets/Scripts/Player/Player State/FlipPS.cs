@@ -12,6 +12,8 @@ public class FlipPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Flip");
         SetFloat("HangTime", 1 / controller.Jump(att.FlipCost, att.FlipHeight));
 
@@ -22,8 +24,6 @@ public class FlipPS : PlayerState
         player.playerManager.JumpUIAnimation(att.FlipCost);
 
         SlowMotion(0.5f, 8f, 2);
-
-        base.Enter();
     }
 
     public override void Update()

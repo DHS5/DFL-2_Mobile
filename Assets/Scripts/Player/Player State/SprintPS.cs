@@ -12,6 +12,8 @@ public class SprintPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         if (!att.CanTruck)
             SetTrigger("Sprint");
         else
@@ -23,8 +25,6 @@ public class SprintPS : PlayerState
         player.playerManager.SprintUIAnimation();
 
         controller.Sprint();
-
-        base.Enter();
     }
 
     public override void Update()

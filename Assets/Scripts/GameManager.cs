@@ -22,7 +22,7 @@ using UnityEngine.Rendering;
 /// <summary>
 /// Game Option
 /// </summary>
-[System.Serializable] public enum GameWeather { NULL = -1, SUN = 0, RAIN = 1, FOG = 2, NIGHT = 3 }
+[System.Serializable] public enum GameWeather { NULL = -1, SUN = 0, RAIN = 1, FOG = 2, PARKOUR = 3 }
 
 /// <summary>
 /// Game Option
@@ -316,6 +316,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void PauseGame()
     {
+        System.GC.Collect();
+
         gameOn = false;
 
         prevTimescale = Time.timeScale;
@@ -402,7 +404,7 @@ public class GameManager : MonoBehaviour
         main.MissionManager.CompleteMissions(gameData, waveNumber);
 
         // # Data #
-        main.DataManager.SaveDatas(false);
+        main.DataManager.SaveOnDisk();
 
         // # UI #
         if (gameData.gameMode == GameMode.DRILL && gameData.gameDrill == GameDrill.PARKOUR) main.GameUIManager.Lose();

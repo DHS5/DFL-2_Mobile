@@ -12,11 +12,11 @@ public class SlowrunPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Slow");
 
         controller.SideSpeed = 0;
-
-        base.Enter();
     }
 
     public override void Update()

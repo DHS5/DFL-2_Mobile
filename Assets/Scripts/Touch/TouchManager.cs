@@ -144,7 +144,11 @@ public class TouchManager : MonoBehaviour
 
     public bool Jump
     {
-        set { lastJumpTime = Time.time; }
+        set 
+        { 
+            lastJumpTime = Time.time;
+            if (main.playerManager.player.controller.OnGround) JumpButtonRed();
+        }
         get
         {
             return lastJumpTime == Time.time;
@@ -252,6 +256,10 @@ public class TouchManager : MonoBehaviour
     {
         if (black) jumpButtonImage.color = Color.gray;
         else jumpButtonImage.color = Color.white;
+    }
+    public void JumpButtonRed()
+    {
+        jumpButtonImage.color = Color.red;
     }
 
     public void HideControllers(bool hide)

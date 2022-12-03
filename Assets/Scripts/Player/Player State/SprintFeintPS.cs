@@ -12,6 +12,8 @@ public class SprintFeintPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("SprintFeint");
 
         player.effects.AudioPlayerEffort(true);
@@ -20,8 +22,6 @@ public class SprintFeintPS : PlayerState
         controller.SideSpeed = Vector3.Dot(controller.Velocity.normalized * att.SprintFeintSpeed, Vector3.right);
 
         SlowMotion(UD.sprintFeintTime, 7.5f, 2);
-
-        base.Enter();
     }
 
     public override void Update()

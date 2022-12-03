@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum EnvironmentStyle { SUN = 0, RAIN = 1, NIGHT = 2, ZOMBIE = 3, FOG = 4, SUNSET1 = 5, SUNSET2 = 6 }
+public enum EnvironmentStyle { SUN = 0, RAIN = 1, NIGHT = 2, ZOMBIE = 3, FOG = 4, SUNSET1 = 5, SUNSET2 = 6, PARKOUR = 7 }
 
 public class EnvironmentManager : MonoBehaviour
 {
     [Tooltip("Main Manager")]
-    private MainManager main;
+    [SerializeField] private MainManager main;
 
     [SerializeField] private Material[] skyboxes;
     [SerializeField] private GameObject[] directionnalLights;
@@ -42,10 +42,6 @@ public class EnvironmentManager : MonoBehaviour
     private Light dirLight;
 
 
-    private void Awake()
-    {
-        main = GetComponent<MainManager>();
-    }
 
 
     // ### Tools ###
@@ -89,9 +85,9 @@ public class EnvironmentManager : MonoBehaviour
             else
                 RenderSettings.fogDensity = normalFogIntensity;
         }
-        if (main.GameManager.gameData.gameWeather == GameWeather.NIGHT) // NIGHT
+        if (main.GameManager.gameData.gameWeather == GameWeather.PARKOUR) // NIGHT
         {
-            envStyleNumber = EnvironmentStyle.NIGHT;
+            envStyleNumber = EnvironmentStyle.PARKOUR;
         }
 
         // # Modes #

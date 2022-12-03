@@ -13,6 +13,8 @@ public class FeintPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         player.effects.AudioPlayerEffort(true);
 
         animTime = UD.feintTime;
@@ -21,8 +23,6 @@ public class FeintPS : PlayerState
         controller.SideSpeed = att.FeintSideSpeed * startSide;
 
         SlowMotion(UD.feintTime, 8f, 2);
-
-        base.Enter();
     }
 
     public override void Update()

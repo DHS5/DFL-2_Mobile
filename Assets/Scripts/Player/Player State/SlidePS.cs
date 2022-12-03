@@ -12,6 +12,8 @@ public class SlidePS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Slide");
 
         player.effects.AudioPlayerEffort(true);
@@ -21,8 +23,6 @@ public class SlidePS : PlayerState
         controller.SideSpeed = Vector3.Dot(controller.Velocity.normalized * att.SlideSpeed, Vector3.right);
 
         SlowMotion(UD.slideTime, 7f, 2);
-
-        base.Enter();
     }
 
     public override void Update()

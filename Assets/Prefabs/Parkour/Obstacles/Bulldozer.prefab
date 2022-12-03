@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 7583127392346751602}
   - component: {fileID: 6291311001916604078}
   - component: {fileID: 936578574175795711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9046388415366299985}
   - component: {fileID: 6666922137465974418}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bulldozer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

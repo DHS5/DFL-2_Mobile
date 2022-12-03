@@ -64,8 +64,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7422397692986292683, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7422397692986292683, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -4780548004322258628, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -4780548004322258628, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
@@ -74,8 +84,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2757671847974706412, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2757671847974706412, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -1561340675325879793, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: -1561340675325879793, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
@@ -87,6 +107,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parkour_Stadium_Body
       objectReference: {fileID: 0}
+    - target: {fileID: 2101014461768404501, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7615115366298042893, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7615115366298042893, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
       propertyPath: m_TagString
@@ -94,8 +124,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7822732340037997661, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7822732340037997661, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050023531728168559, guid: c5f05c1e87aa85b4f831ee958a602135,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8050023531728168559, guid: c5f05c1e87aa85b4f831ee958a602135,
         type: 3}

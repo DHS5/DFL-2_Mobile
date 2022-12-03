@@ -12,14 +12,14 @@ public class JumpPS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Jump");
         SetFloat("HangTime", 1 / controller.Jump(att.JumpCost, 0));
 
         player.effects.AudioPlayerEffort(false);
 
         player.playerManager.JumpUIAnimation(att.JumpCost);
-        
-        base.Enter();
     }
 
     public override void Update()

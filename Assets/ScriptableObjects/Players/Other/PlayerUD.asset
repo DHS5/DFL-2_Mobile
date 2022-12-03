@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ff3ea970d1a83458a940855aa9440f, type: 3}
   m_Name: PlayerUD
   m_EditorClassIdentifier: 
-  siderunTime: 0.3
+  siderunTime: 0.2
   siderunDelay: 0
   jukeTime: 0.5
   jukeDelay: 0.25

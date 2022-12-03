@@ -12,14 +12,14 @@ public class HurdlePS : PlayerState
 
     public override void Enter()
     {
+        base.Enter();
+
         SetTrigger("Hurdle");
         SetFloat("HangTime", 1 / controller.Jump(att.HurdleCost, att.HurdleHeight));
 
         player.effects.AudioPlayerEffort(false);
 
         player.playerManager.JumpUIAnimation(att.HurdleCost);
-        
-        base.Enter();
     }
 
     public override void Update()

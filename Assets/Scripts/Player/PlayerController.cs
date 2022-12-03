@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
 
     // Player state variables
     public bool OnGround { get; private set; }
-    public bool CanAccelerate { get; set; }
+    public bool CanAccelerate { get; private set; }
     public bool AlreadySlide { get; private set; }
     public bool Sprinting { get; private set; }
     public float SprintStartTime { get; private set; }
@@ -159,7 +159,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         FilterDir();
-        //FilterAcc();
+        FilterAcc();
 
         if (!player.gameplay.freeze)
             CurrentState = CurrentState.Process();
@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour
     {
         rawDir = touchManager.Side;
 
-        if (Mathf.Abs(realDir - rawDir) <= Snap + DirGravity * Time.deltaTime)
+        if (Mathf.Abs(realDir - rawDir) <= Snap)
         {
             SnapDir();
             return;
@@ -233,34 +233,23 @@ public class PlayerController : MonoBehaviour
     }
     private void FilterAcc()
     {
-        //float rawAcc = Input.GetAxisRaw("Vertical");
         rawAcc = touchManager.Acc;
 
-        //if (rawAcc != 0)
-        //    realAcc += rawAcc * AccSensitivity * Time.deltaTime;
-        //else if (rawAcc == 0)
-        //{
-        //    if (realAcc > 0)
-        //    {
-        //        realAcc -= AccGravity * Time.deltaTime;
-        //        if (realAcc < 0) realAcc = 0f;
-        //    }
-        //    else if (realAcc < 0)
-        //    {
-        //        realAcc += AccGravity * Time.deltaTime;
-        //        if (realAcc > 0) realAcc = 0f;
-        //    }
-        //}
+        if (Mathf.Abs(realAcc - rawAcc) <= Snap + AccGravity * Time.deltaTime)
+        {
+            SnapAcc();
+            return;
+        }
 
         realAcc = Mathf.Lerp(realAcc, rawAcc, AccSensitivity * 2 * Time.deltaTime);
 
-        if (Mathf.Abs(realAcc) <= Snap) SnapAcc();
+        if (Mathf.Abs(realAcc - rawAcc) <= Snap) SnapAcc();
 
         realAcc = Mathf.Clamp(realAcc, -1, 1);
     }
 
     public void SnapDir() { realDir = touchManager.Side; }
-    public void SnapAcc() { realAcc = 0f; }
+    public void SnapAcc() { realAcc = touchManager.Acc; }
 
     public void FullDir(float side) { realDir = side / Mathf.Abs(side); }
 
