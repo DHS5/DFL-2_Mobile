@@ -114,7 +114,7 @@ public class PlayerGameplay : MonoBehaviour
     /// </summary>
     /// <param name="collision">Collider of the colliding object</param>
     private void OnCollisionEnter(Collision collision)
-    {        
+    {
         if (!player.gameManager.GameOver)
         {
             // When the player collides with an enemy --> game over
