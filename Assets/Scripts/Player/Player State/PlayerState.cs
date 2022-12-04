@@ -22,7 +22,7 @@ public abstract class PlayerState
 
     public Player player;
     public PlayerController controller;
-    public Animator[] animators = new Animator[2];
+    public Animator animator;
     public TouchManager touch;
 
 
@@ -67,8 +67,7 @@ public abstract class PlayerState
         att = controller.playerAtt;
         UD = controller.playerUD;
 
-        animators[0] = player.fPPlayer.animator;
-        animators[1] = player.tPPlayer.animator;
+        animator = player.tPPlayer.animator;
     }
 
 
@@ -81,7 +80,7 @@ public abstract class PlayerState
     {
         GetInputs();
     }
-    public virtual void Exit() { stage = Event.EXIT; } // Debug.Log(name + " -> " + nextState.name); }
+    public virtual void Exit() { stage = Event.EXIT; }// Debug.Log(name + " -> " + nextState.name); }
 
 
     protected void GetInputs()
@@ -155,38 +154,23 @@ public abstract class PlayerState
 
     protected void SetTrigger(string name)
     {
-        foreach (Animator a in animators)
-        {
-            a.SetTrigger(name);
-        }
+        animator.SetTrigger(name);
     }
     protected void ResetTrigger(string name)
     {
-        foreach (Animator a in animators)
-        {
-            a.ResetTrigger(name);
-        }
+        animator.ResetTrigger(name);
     }
     protected void SetFloat(string name, float value)
     {
-        foreach (Animator a in animators)
-        {
-            a.SetFloat(name, value);
-        }
+        animator.SetFloat(name, value);
     }
     protected void SetInt(string name, int value)
     {
-        foreach (Animator a in animators)
-        {
-            a.SetInteger(name, value);
-        }
+        animator.SetInteger(name, value);
     }
     protected void SetLayer(string name, float weight)
     {
-        foreach (Animator a in animators)
-        {
-            a.SetLayerWeight(a.GetLayerIndex(name), weight);
-        }
+        animator.SetLayerWeight(animator.GetLayerIndex(name), weight);
     }
 
     public void Catch()
@@ -234,10 +218,7 @@ public abstract class PlayerState
 
     public void Shoot(bool fireArm)
     {
-        foreach (Animator a in animators)
-        {
-            a.SetTrigger(fireArm ? "Shoot" : "Cut");
-        }
+        animator.SetTrigger(fireArm ? "Shoot" : "Cut");
     }
 
     private void DeactivateWeaponLayer()

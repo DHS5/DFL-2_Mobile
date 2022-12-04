@@ -149,8 +149,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("start");
-
         PlayerRescale();
 
         CurrentState = new RunPS(player, true);
@@ -273,7 +271,6 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            Debug.Log("ground collision, state : " + CurrentState.name);
             OnGround = true;
             player.playerManager.JumpButtonColor(false);
         }
@@ -284,14 +281,9 @@ public class PlayerController : MonoBehaviour
         OnGround = false;
     }
 
-    public bool TouchGround(bool pause)
+    public bool TouchGround()
     {
-        bool check = Physics.CheckBox(player.transform.position, checkBox, Quaternion.identity, groundLayerMask);
-        if (pause && !check)
-        {
-            Debug.Log("force quit ground");
-        }
-        return check;
+        return Physics.CheckBox(player.transform.position, checkBox, Quaternion.identity, groundLayerMask);
     }
 
     //private void OnDrawGizmos()
@@ -302,7 +294,7 @@ public class PlayerController : MonoBehaviour
 
     public bool CanJump(float cost)
     {
-        return OnGround && cost <= jumpCharge && TouchGround(false);
+        return OnGround && cost <= jumpCharge && TouchGround();
     }
 
     private void RechargeJump()

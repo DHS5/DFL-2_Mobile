@@ -71,7 +71,7 @@ public class SlowsiderunPS : PlayerState
 
     public override void Exit()
     {
-        ResetTrigger("Run");
+        //ResetTrigger("Run");
 
         base.Exit();
     }

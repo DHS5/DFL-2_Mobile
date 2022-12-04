@@ -74,7 +74,7 @@ public class RunPS : PlayerState
 
     public override void Exit()
     {
-        ResetTrigger("Run");
+        //ResetTrigger("Run");
 
         base.Exit();
     }

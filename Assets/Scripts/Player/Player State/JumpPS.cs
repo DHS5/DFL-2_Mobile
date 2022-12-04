@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class JumpPS : PlayerState
 {
-    private int cpt = 0;
     private bool quittedGround = false;
 
     public JumpPS(Player _player) : base(_player)
@@ -15,8 +14,6 @@ public class JumpPS : PlayerState
 
     public override void Enter()
     {
-        Debug.Log("Jump, frame : " + cpt);
-
         base.Enter();
 
         SetTrigger("Jump");
@@ -29,22 +26,18 @@ public class JumpPS : PlayerState
 
     public override void Update()
     {
-        cpt++;
-
         base.Update();
 
         PlayerOrientation();
 
-        if (!quittedGround && !controller.TouchGround(controller.OnGround))
+        if (!quittedGround && !controller.TouchGround())
         {
             quittedGround = true;
             controller.ForceQuitGround();
-            Debug.Log("quitted ground, frame " + cpt);
         }
 
         if (quittedGround && controller.OnGround)
         {
-            Debug.Log("Jump -->  on ground, frame " + cpt);
             // Slip
             if (IsRaining)
                 nextState = new SlipPS(player);

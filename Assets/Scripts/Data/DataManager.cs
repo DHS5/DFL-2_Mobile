@@ -502,6 +502,7 @@ public class DataManager : MonoBehaviour
         //Debug.Log("Load managers");
         StartCoroutine(FirstLoad());
         StartCoroutine(LoadMenuManagers());
+        StartCoroutine(DeleteGarbageFiles());
 
         reloadAll = false;
     }
@@ -591,6 +592,38 @@ public class DataManager : MonoBehaviour
         SaveOnDisk();
 
         SceneManager.LoadScene((int)SceneNumber.MENU);
+    }
+
+    private IEnumerator DeleteGarbageFiles()
+    {
+        bool gotResponse = false;
+
+        LootLockerSDKManager.GetSingleKeyPersistentStorage("OnlineFileID", (response) =>
+        {
+            if (response.success)
+            {
+                if (response.payload != null)
+                {
+                    onlineFileID = int.Parse(response.payload.value);
+                }
+
+                LootLockerSDKManager.GetAllPlayerFiles((response) =>
+                {
+                    if (response.success)
+                    {
+                        for (int i = 0; i < response.items.Length; i++)
+                        {
+                            if (response.items[i].id != OnlineFileID)
+                            {
+                                LootLockerSDKManager.DeletePlayerFile(response.items[i].id, (onComplete) => { });
+                            }
+                        }
+                    }
+                });
+            }
+        });
+
+        yield return new WaitUntil(() => gotResponse);
     }
 
     private IEnumerator LoadJSONFromURL(string url)

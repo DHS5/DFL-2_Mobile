@@ -92,7 +92,7 @@ public class SiderunPS : PlayerState
     public override void Exit()
     {
         //ResetTrigger("Side");
-        ResetTrigger("Run");
+        //ResetTrigger("Run");
 
         base.Exit();
     }
