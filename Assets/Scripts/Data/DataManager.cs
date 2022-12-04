@@ -502,7 +502,6 @@ public class DataManager : MonoBehaviour
         //Debug.Log("Load managers");
         StartCoroutine(FirstLoad());
         StartCoroutine(LoadMenuManagers());
-        StartCoroutine(DeleteGarbageFiles());
 
         reloadAll = false;
     }
@@ -594,7 +593,13 @@ public class DataManager : MonoBehaviour
         SceneManager.LoadScene((int)SceneNumber.MENU);
     }
 
-    private IEnumerator DeleteGarbageFiles()
+
+    public void DeleteGarbageFiles()
+    {
+        StartCoroutine(DeleteGarbageFilesCR());
+    }
+
+    private IEnumerator DeleteGarbageFilesCR()
     {
         bool gotResponse = false;
 
@@ -618,8 +623,18 @@ public class DataManager : MonoBehaviour
                                 LootLockerSDKManager.DeletePlayerFile(response.items[i].id, (onComplete) => { });
                             }
                         }
+
+                        gotResponse = true;
+                    }
+                    else
+                    {
+                        gotResponse = true;
                     }
                 });
+            }
+            else
+            {
+                gotResponse = true;
             }
         });
 
