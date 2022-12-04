@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.Rendering;
 
 /// <summary>
@@ -67,7 +68,7 @@ public class PlayerController : MonoBehaviour
     private bool isRaining;
 
 
-    readonly float checkboxSize = 1.5f;
+    readonly float checkboxSize = 1f;
     readonly float checkboxThreshold = 0.25f;
     private Vector3 checkBox;
     private int groundLayerMask;
@@ -148,6 +149,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("start");
+
         PlayerRescale();
 
         CurrentState = new RunPS(player, true);
@@ -270,19 +273,36 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("ground collision, state : " + CurrentState.name);
             OnGround = true;
             player.playerManager.JumpButtonColor(false);
         }
     }
 
-    public bool TouchGround()
+    public void ForceQuitGround()
     {
-        return Physics.CheckBox(player.transform.position, checkBox, Quaternion.identity, groundLayerMask);
+        OnGround = false;
     }
+
+    public bool TouchGround(bool pause)
+    {
+        bool check = Physics.CheckBox(player.transform.position, checkBox, Quaternion.identity, groundLayerMask);
+        if (pause && !check)
+        {
+            Debug.Log("force quit ground");
+        }
+        return check;
+    }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireCube(player.transform.position, checkBox);
+    //}
 
     public bool CanJump(float cost)
     {
-        return OnGround && cost <= jumpCharge && TouchGround();
+        return OnGround && cost <= jumpCharge && TouchGround(false);
     }
 
     private void RechargeJump()

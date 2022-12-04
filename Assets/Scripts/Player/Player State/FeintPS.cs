@@ -50,7 +50,7 @@ public class FeintPS : PlayerState
             // Slowsiderun
             else if (acc < 0 && side != 0 && side * startSide > 0)
             {
-                nextState = new SlowsiderunPS(player, side / Mathf.Abs(side), true);
+                nextState = new SlowsiderunPS(player, startSide, true);
                 stage = Event.EXIT;
             }
             // Slowrun
@@ -61,7 +61,7 @@ public class FeintPS : PlayerState
             // Siderun
             else if (side != 0 && side * startSide > 0)
             {
-                nextState = new SiderunPS(player, side / Mathf.Abs(side), true, false);
+                nextState = new SiderunPS(player, startSide, true, false);
                 stage = Event.EXIT;
             }
             // Run

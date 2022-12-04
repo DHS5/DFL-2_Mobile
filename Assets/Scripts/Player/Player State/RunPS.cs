@@ -16,7 +16,10 @@ public class RunPS : PlayerState
     {
         base.Enter();
 
-        if (anim) SetTrigger("Run");
+        if (anim)
+        {
+            SetTrigger("Run");
+        }
         SetFloat("Dir", 0f);
 
         controller.Speed = att.NormalSpeed;
@@ -72,7 +75,7 @@ public class RunPS : PlayerState
     public override void Exit()
     {
         ResetTrigger("Run");
-        
+
         base.Exit();
     }
 }
