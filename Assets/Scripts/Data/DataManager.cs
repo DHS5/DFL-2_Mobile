@@ -545,7 +545,8 @@ public class DataManager : MonoBehaviour
 
     private IEnumerator Quit()
     {
-        yield return StartCoroutine(SavePlayerData(false));
+        yield return StartCoroutine(SaveAndCleanCR());
+
         Application.Quit();
     }
 

@@ -84,6 +84,7 @@ public class PreFeintPS : PlayerState
     public override void Exit()
     {
         ResetTrigger("Side");
+        ResetTrigger("Feint");
 
         base.Exit();
     }
