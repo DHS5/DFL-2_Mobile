@@ -125,6 +125,13 @@ public struct GameData
     public List<GameObject> weapons;
 }
 
+[System.Serializable]
+public struct AdPreference
+{
+    public bool consent;
+    public bool rememberChoice;
+    public int gamesPlayed;
+}
 
 [System.Serializable]
 public struct PlayerInfo
@@ -159,6 +166,7 @@ public class DataManager : MonoBehaviour
     [HideInInspector] public PlayerData playerData;
     [HideInInspector] public InventoryData inventoryData;
     [HideInInspector] public ProgressionData progressionData;
+    [HideInInspector] public AdPreference adPrefs;
     [HideInInspector] public StatsData[] statsDatas = new StatsData[15];
 
     // Current game data
@@ -173,7 +181,14 @@ public class DataManager : MonoBehaviour
     private bool reloadAll = false;
 
 
+    private bool firstScene = true;
+
     // ### Properties ###
+
+    public bool FirstScene
+    {
+        get { return firstScene; }
+    }
 
     private MenuMainManager MenuMain
     {
@@ -207,6 +222,7 @@ public class DataManager : MonoBehaviour
         {
             Destroy(gameObject);
             // Clears the options when starting the menu
+            InstanceDataManager.firstScene = false;
             if (InstanceDataManager.reloadAll) InstanceDataManager.LoadData();
             else InstanceDataManager.StartCoroutine(InstanceDataManager.LoadMenuManagers());
 
@@ -359,6 +375,12 @@ public class DataManager : MonoBehaviour
         if (gameplayData.jumpButtonSize == 0) gameplayData.jumpButtonSize = 250;
     }
 
+    private void InitAdPref()
+    {
+        adPrefs.consent = true;
+        adPrefs.rememberChoice = false;
+        adPrefs.gamesPlayed = 0;
+    }
 
     public void ClearGameData()
     {
@@ -376,6 +398,7 @@ public class DataManager : MonoBehaviour
         InitProgression();
         InitInventory();
         InitStatsDatas();
+        InitAdPref();
         ResetPlayerPrefs();
     }
 
@@ -398,6 +421,8 @@ public class DataManager : MonoBehaviour
         public ProgressionData progressionData;
 
         public StatsData[] statsDatas;
+
+        public AdPreference adPreference;
     }
 
 
@@ -491,6 +516,7 @@ public class DataManager : MonoBehaviour
         data.inventoryData = inventoryData;
         data.progressionData = progressionData;
         data.statsDatas = statsDatas;
+        data.adPreference = adPrefs;
 
         string json = JsonUtility.ToJson(data);
 
@@ -749,6 +775,7 @@ public class DataManager : MonoBehaviour
         inventoryData = data.inventoryData;
         progressionData = data.progressionData;
         statsDatas = data.statsDatas;
+        adPrefs = data.adPreference;
 
         InitPlayerPrefs();
         FixGameplay();

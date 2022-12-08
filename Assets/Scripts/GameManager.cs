@@ -76,6 +76,8 @@ public class GameManager : MonoBehaviour
     private bool transitionning = false;
     private float prevTimescale = 1.0f;
 
+    private bool win = false;
+
     // ### Properties ###
 
     public int WaveNumber
@@ -386,6 +388,9 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1.0f; // Security
 
+        // # Ads #
+        bool ad = main.GameAdManager.WillShowAd;
+
         if (gameData.gameMode != GameMode.DRILL && gameData.gameMode != GameMode.TUTORIAL)
         {
             // # Leaderboard #
@@ -407,8 +412,10 @@ public class GameManager : MonoBehaviour
         main.DataManager.SaveOnDisk();
 
         // # UI #
-        if (gameData.gameMode == GameMode.DRILL && gameData.gameDrill == GameDrill.PARKOUR) main.GameUIManager.Lose();
-        else main.GameUIManager.GameOver();
+        if (!ad)
+        {
+            GameOverUI();
+        }
 
         // Weapons
         if (gameData.gameMode == GameMode.ZOMBIE && gameData.gameOptions.Contains(GameOption.WEAPONS))
@@ -424,6 +431,12 @@ public class GameManager : MonoBehaviour
         // Call the Ouuuuuh with the game audio manager (currently in field manager)
 
         yield return new WaitForSeconds(0.75f);
+
+        if (ad)
+        { 
+            main.GameAdManager.ShowInterAd();
+            GameOverUI();
+        }
 
         main.FieldManager.GameOver();
         main.EnemiesManager.GameOver();
@@ -445,19 +458,24 @@ public class GameManager : MonoBehaviour
         main.GameAudioManager.GetSoundSources();
     }
 
+    private void GameOverUI()
+    {
+        if (win) main.GameUIManager.Win();
+        else if (gameData.gameMode == GameMode.DRILL && gameData.gameDrill == GameDrill.PARKOUR) main.GameUIManager.Lose();
+        else main.GameUIManager.GameOver();
+    }
+
 
     public void Win()
     {
         gameOver = true;
+        win = true;
 
         // # Parkour #
         main.ParkourManager.Win();
 
         // # Data #
         main.DataManager.SaveOnDisk();
-
-        // # UI #
-        main.GameUIManager.Win();
 
         // # Cursor #
         main.CursorManager.UnlockCursor();

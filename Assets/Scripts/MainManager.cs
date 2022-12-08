@@ -33,6 +33,8 @@ public class MainManager : MonoBehaviour
     public EnemiesManager enemiesManager;
     public MissionManager MissionManager { get { return missionManager; } }
     public MissionManager missionManager;
+    public GameAdManager GameAdManager { get { return gameAdManager; } }
+    [SerializeField] private GameAdManager gameAdManager;
 
     // Modes
     public TeamManager TeamManager { get { return teamManager; } }

@@ -31,6 +31,8 @@ public class MenuMainManager : MonoBehaviour
     public CardManager cardManager;
     public TutoUIManager TutoUIManager { get { return tutoUIManager; } }
     public TutoUIManager tutoUIManager;
+    public MenuAdManager MenuAdManager { get { return menuAdManager; } }
+    [SerializeField] private MenuAdManager menuAdManager;
 
 
     [HideInInspector] public bool awake = false;
