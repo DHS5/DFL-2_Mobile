@@ -17,10 +17,6 @@ public abstract class AdManager : MonoBehaviour
 
     // ### Results Logs ###
 
-    public void AdReward()
-    {
-        Debug.Log("You've been rewarded !");
-    }
     public void Fail()
     {
         Debug.Log("Failed to load");

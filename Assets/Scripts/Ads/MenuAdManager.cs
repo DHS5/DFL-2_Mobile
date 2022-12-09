@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Placement;
+using TMPro;
 
 
 public class MenuAdManager : AdManager
@@ -14,6 +15,8 @@ public class MenuAdManager : AdManager
     [SerializeField] private RewardedAdGameObject rewardedAd;
     [Space, Space]
     [SerializeField] private GameObject consentPopup;
+    [Space, Space]
+    [SerializeField] private TextMeshProUGUI rewardText;
 
     private bool gotConsentResponse = false;
 
@@ -28,6 +31,8 @@ public class MenuAdManager : AdManager
         dataManager = main.DataManager;
 
         StartCoroutine(GetConsentCR());
+
+        ActuRewardText();
     }
 
     // ### Start Coroutine ###
@@ -98,5 +103,29 @@ public class MenuAdManager : AdManager
     public void ShowRewarded()
     {
         rewardedAd.ShowIfLoaded();
+    }
+
+
+    // ### Ad Reward ###
+
+    private int IntReward()
+    {
+        if (!dataManager.progressionData.legendDiff) return 40000;
+        if (!dataManager.progressionData.veteranDiff) return 30000;
+        if (!dataManager.progressionData.starDiff) return 20000;
+        if (!dataManager.progressionData.proDiff) return 10000;
+        else return 5000;
+    }
+
+    public void AdReward()
+    {
+        Debug.Log("You've been rewarded !");
+        dataManager.inventoryData.coins += IntReward();
+        main.shopManager.ActuCoinsTexts();
+    }
+
+    private void ActuRewardText()
+    {
+        rewardText.text = "= " + IntReward();
     }
 }

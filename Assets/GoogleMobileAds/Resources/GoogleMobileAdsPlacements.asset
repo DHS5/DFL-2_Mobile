@@ -43,3 +43,15 @@ MonoBehaviour:
     iOSAdUnitId: 
     persistent: 0
     autoLoadEnabled: 0
+  - placementName: DFL2 Interstitial
+    adType: 1
+    androidAdUnitId: ca-app-pub-5125977012935599/7114786306
+    iOSAdUnitId: 
+    persistent: 0
+    autoLoadEnabled: 0
+  - placementName: DFL2 Rewarded
+    adType: 2
+    androidAdUnitId: ca-app-pub-5125977012935599/8236296284
+    iOSAdUnitId: 
+    persistent: 0
+    autoLoadEnabled: 0

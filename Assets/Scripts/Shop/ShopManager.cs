@@ -145,7 +145,7 @@ public class ShopManager : MonoBehaviour
 
     // ### COINS ###
 
-    private void ActuCoinsTexts()
+    public void ActuCoinsTexts()
     {
         foreach (TextMeshProUGUI t in coinsTexts)
             t.text = main.DataManager.inventoryData.coins.ToString();
