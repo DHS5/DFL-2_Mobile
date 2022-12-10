@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7074544346920314125}
   - component: {fileID: 5342750281179753051}
   - component: {fileID: 6184538452008875470}
-  - component: {fileID: 1974358365065245181}
-  m_Layer: 0
+  - component: {fileID: 5815352922947191574}
+  m_Layer: 9
   m_Name: SidelineR
   m_TagString: OutOfBounds
   m_Icon: {fileID: 0}
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1974358365065245181
-MeshCollider:
+--- !u!65 &5815352922947191574
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,10 +94,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &232335250489342184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,7 +1232,7 @@ GameObject:
   - component: {fileID: 407003250111847687}
   - component: {fileID: 407003250111847682}
   - component: {fileID: 407003250111847685}
-  - component: {fileID: 407003250111847684}
+  - component: {fileID: 4615421777715883465}
   m_Layer: 6
   m_Name: FieldGrass
   m_TagString: Ground
@@ -1306,8 +1305,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &407003250111847684
-MeshCollider:
+--- !u!65 &4615421777715883465
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1316,10 +1315,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &407003250193668797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1827,7 @@ GameObject:
   - component: {fileID: 407003250853191686}
   - component: {fileID: 407003250853191685}
   - component: {fileID: 407003250853191684}
-  - component: {fileID: 407003250853191687}
+  - component: {fileID: 4023110303802774027}
   m_Layer: 12
   m_Name: EndzoneGrass 1
   m_TagString: Ground
@@ -1902,8 +1900,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &407003250853191687
-MeshCollider:
+--- !u!65 &4023110303802774027
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1912,10 +1910,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &407003250859481984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,7 +2173,7 @@ GameObject:
   - component: {fileID: 407003251271606896}
   - component: {fileID: 407003251271606911}
   - component: {fileID: 407003251271606910}
-  - component: {fileID: 407003251271606897}
+  - component: {fileID: 4888726541296576218}
   m_Layer: 12
   m_Name: EndzoneGrass 2
   m_TagString: Ground
@@ -2249,8 +2246,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &407003251271606897
-MeshCollider:
+--- !u!65 &4888726541296576218
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2259,10 +2256,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &407003251329973987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,8 +2469,8 @@ GameObject:
   - component: {fileID: 7999144234955780361}
   - component: {fileID: 2463278488107140312}
   - component: {fileID: 1755923437998509675}
-  - component: {fileID: 2219490181765102474}
-  m_Layer: 0
+  - component: {fileID: 5974354648911924026}
+  m_Layer: 9
   m_Name: SidelineL
   m_TagString: OutOfBounds
   m_Icon: {fileID: 0}
@@ -2546,8 +2542,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2219490181765102474
-MeshCollider:
+--- !u!65 &5974354648911924026
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2556,10 +2552,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2598431362117344919
 GameObject:
   m_ObjectHideFlags: 0

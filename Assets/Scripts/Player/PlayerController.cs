@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.Rendering;
 
 /// <summary>
@@ -70,7 +69,6 @@ public class PlayerController : MonoBehaviour
 
     readonly float checkboxSize = 1f;
     readonly float checkboxThreshold = 0.25f;
-    private Vector3 checkBox;
     private int groundLayerMask;
 
     // Player state variables
@@ -159,7 +157,6 @@ public class PlayerController : MonoBehaviour
 
         jumpCharge = playerAtt.JumpStamina;
 
-        checkBox = new Vector3(checkboxSize, checkboxThreshold, checkboxSize);
         groundLayerMask = LayerMask.GetMask("Ground", "NavMesh");
     }
 
@@ -281,9 +278,13 @@ public class PlayerController : MonoBehaviour
         OnGround = false;
     }
 
-    public bool TouchGround()
+    public bool TouchGround(float checkSize)
     {
-        return Physics.CheckBox(player.transform.position, checkBox, Quaternion.identity, groundLayerMask);
+        return Physics.CheckBox(player.transform.position, CheckBox(checkSize), Quaternion.identity, groundLayerMask);
+    }
+    private Vector3 CheckBox(float checkSize)
+    {
+        return new Vector3(checkboxSize, checkSize, checkboxSize);
     }
 
     //private void OnDrawGizmos()
@@ -294,7 +295,7 @@ public class PlayerController : MonoBehaviour
 
     public bool CanJump(float cost)
     {
-        return OnGround && cost <= jumpCharge && TouchGround();
+        return OnGround && cost <= jumpCharge && TouchGround(checkboxThreshold);
     }
 
     private void RechargeJump()

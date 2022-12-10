@@ -89261,10 +89261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adType: 0
-  selectedPlacementIndex: 0
-  androidAdUnitId: ca-app-pub-3940256099942544/6300978111
-  iOSAdUnitId: ca-app-pub-3940256099942544/2934735716
-  persistent: 1
+  selectedPlacementIndex: 1
+  androidAdUnitId: ca-app-pub-3940256099942544/5354046379
+  iOSAdUnitId: 
+  persistent: 0
   autoLoadEnabled: 0
   adSize:
     type: 0
@@ -90341,9 +90341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adType: 2
-  selectedPlacementIndex: 0
-  androidAdUnitId: ca-app-pub-3940256099942544/5224354917
-  iOSAdUnitId: ca-app-pub-3940256099942544/1712485313
+  selectedPlacementIndex: 1
+  androidAdUnitId: ca-app-pub-5125977012935599/8236296284
+  iOSAdUnitId: 
   persistent: 0
   autoLoadEnabled: 0
   onAdLoaded:

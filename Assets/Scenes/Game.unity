@@ -9173,9 +9173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adType: 1
-  selectedPlacementIndex: 0
-  androidAdUnitId: ca-app-pub-3940256099942544/1033173712
-  iOSAdUnitId: ca-app-pub-3940256099942544/4411468910
+  selectedPlacementIndex: 1
+  androidAdUnitId: ca-app-pub-5125977012935599/7114786306
+  iOSAdUnitId: 
   persistent: 0
   autoLoadEnabled: 0
   onAdLoaded:
